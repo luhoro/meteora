@@ -9,6 +9,9 @@ module.exports = {
         'purple-prim': '#9353FF',
         'red-sec': '#EE6471',
         'orange-sec': '#F87F46',
+      },
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif']
       }
     },
   },
