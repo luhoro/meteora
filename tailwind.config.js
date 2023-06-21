@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*.{html, js}"],
+  content: [
+    "*.{html, js}",
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     extend: {
       colors: {
@@ -12,10 +15,16 @@ module.exports = {
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif']
-      }
+      },
+      backgroundImage: {
+        'banner-sm': "url('src/images/banner/banner1sm.svg')",
+        'banner-md': "url('src/images/banner/banner1md.svg')",
+        'banner-lg': "url('src/images/banner/banner1lg.svg')",
+      },
     },
   },
   plugins: [
+    require('flowbite/plugin'),
     {
     tailwindcss: {},
     autoprefixer: {},
