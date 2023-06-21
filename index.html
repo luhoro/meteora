@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meteora</title>
     <link rel="shortcut icon" href="src/images/favicon.svg" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/styles/output.css" />
   </head>
 
@@ -72,54 +72,47 @@
     </header>
 
     <main>
-      <section id="banner" class="bg-slate-400 relative flex w-full">
-        <!--  -->
-        <div id="banner-carroussel" data-te-carousel-init data-te-carousel-slide data-carousel="static" class="relative w-full ">
+      <section id="banner-carrousel" class="relative w-full h-full z-0">
+        <div id="wrapper" data-carousel="static" class="relative overflow-hidden">
 
-          <div id="banner"
-            class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
-            <div class="w-full block">
-              <img src="./src/images/banner/banner1sm.svg" alt="Banner Meteora moda de impacto positivo" class="w-full h-full block md:hidden"/>
-              <img src="./src/images/banner/banner1md.svg" alt="Banner Meteora moda de impacto positivo" class="w-full h-full hidden md:block lg:hidden"/>
-              <img src="./src/images/banner/banner1lg.svg" alt="Banner Meteora moda de impacto positivo" class="w-full h-full hidden lg:block"/>
-            </img>
-            <div> </div>
+          <div data-carousel-item active id="wrapper-carousel" class="relative hidden duration-700 ease-in-out">
+            <div>
+              <img src="./src/images/banner/banner1sm.svg" alt="Banner Meteora moda de impacto positivo" class="w-full h-full block md:hidden" />
+              <img src="./src/images/banner/banner1md.svg" alt="Banner Meteora moda de impacto positivo" class="w-full h-full hidden md:block lg:hidden" />
+              <img src="./src/images/banner/banner1lg.svg" alt="Banner Meteora moda de impacto positivo" class="w-full h-full hidden lg:block" />
+            </div>
           </div>
 
-          <div id="banner"
-            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
-            <div class="w-full block">
+          <div data-carousel-item id="banner" class=" hidden duration-700 ease-in-out">
+            <div>
               <img src="./src/images/banner/banner2sm.svg" alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full block md:hidden">
               <img src="./src/images/banner/banner2md.svg" alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full hidden md:block lg:hidden">
               <img src="./src/images/banner/banner2lg.svg" alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full hidden lg:block">
             </div>
           </div>
 
-          <div id="banner"
-            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none">
-            <div class="w-full block">
+          <div data-carousel-item id="banner" class="hidden duration-700 ease-in-out">
+            <div>
               <img src="./src/images/banner/banner3sm.svg" alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental" class="w-full h-full block md:hidden">
               <img src="./src/images/banner/banner3md.svg" alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental" class="w-full h-full hidden md:block lg:hidden">
               <img src="./src/images/banner/banner3lg.svg" alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental" class="w-full h-full hidden lg:block">
             </div>
           </div>
 
-        </div>
-        <!--  -->
-        <button id="carousel-previous" class="absolute p-3 top-1/2 left-0 cursor-pointer rounded-full" data-te-target="#carouselExampleIndicators" data-te-slide="prev">
-          <img src="./src/images/icons/arrow-left.svg" alt="" />
-        </button>
+          <button type="button" data-carousel-prev class="absolute p-3 top-1/2 left-0 cursor-pointer rounded-full z-20">
+            <img src="./src/images/icons/arrow-left.svg" alt="Anterior" />
+          </button>
 
-        <button id="carousel-next" class="absolute p-3 top-1/2 right-0 cursor-pointer rounded-full" data-te-target="#carouselExampleIndicators" data-te-slide="next">
-          <img src="./src/images/icons/arrow-right.svg" alt="" />
-        </button>
+          <button type="button" data-carousel-next class="absolute p-3 top-1/2 right-0 cursor-pointer rounded-full z-20">
+            <img src="./src/images/icons/arrow-right.svg" alt="Próximo" />
+          </button>
 
-        <div  class="flex flex-row justify-center gap-4 absolute bottom-7 w-full" data-te-carousel-indicators>
-          <button id="carousel-to-1" class="bg-white h-[3px] w-[30px]" data-te-target="#carouselExampleIndicators" data-te-slide-to="0" data-te-carousel-active></button>
+          <div class="flex flex-row justify-center gap-4 absolute bottom-7 w-full z-20">
+            <button type="button" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0" class="bg-white h-[3px] w-[30px]"></button>
+            <button type="button" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1" class="bg-white h-[3px] w-[30px]"></button>
+            <button type="button" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2" class="bg-white h-[3px] w-[30px]"></button>
+          </div>
 
-          <button id="carousel-to-2" class="bg-white h-[3px] w-[30px]" data-te-target="#carouselExampleIndicators" data-te-slide-to="1"></button>
-
-          <button id="carousel-to-3" class="bg-white h-[3px] w-[30px]" data-te-target="#carouselExampleIndicators" data-te-slide-to="2"></button>
         </div>
       </section>
 
@@ -177,9 +170,7 @@
       </div>
     </footer>
 
-
-
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
     <script type="module" src="./src/scripts/script.js"></script>
   </body>
 

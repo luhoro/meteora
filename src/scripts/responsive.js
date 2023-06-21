@@ -16,5 +16,8 @@ export default function headerMenu() {
     }
   }
 
-  menuButton.addEventListener('click', () => toggleButton())  
+  menuButton.addEventListener('click', () => {
+    toggleButton()
+    console.log('aaaa')
+  })  
 }
