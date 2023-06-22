@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meteora</title>
     <link rel="shortcut icon" href="src/images/favicon.svg" type="image/x-icon" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./src/styles/output.css" />
   </head>
 
@@ -41,7 +41,7 @@
         </div>
 
         <nav data-mobile
-          class="z-10 absolute top-0 right-0 bg-slate-700 px-6 pt-8 hidden md:hidden transition ease-linear">
+          class="z-10 absolute top-0 right-0 bg-slate-800 px-6 pt-8 hidden md:hidden transition ease-linear">
           <ul class="flex flex-col">
             <li class="py-2 border-b border-gray-300">
               <a href="" class="py-2 text-white hover:text-green-prim">Home</a>
@@ -74,7 +74,6 @@
     <main>
       <section id="banner-carrousel" class="relative w-full h-full z-0">
         <div id="wrapper" data-carousel="static" class="relative overflow-hidden">
-
           <div data-carousel-item active id="wrapper-carousel" class="relative hidden duration-700 ease-in-out">
             <div>
               <img src="./src/images/banner/banner1sm.svg" alt="Banner Meteora moda de impacto positivo" class="w-full h-full block md:hidden" />
@@ -99,27 +98,75 @@
             </div>
           </div>
 
-          <button type="button" data-carousel-prev class="absolute p-3 top-1/2 left-0 cursor-pointer rounded-full z-20">
+          <button type="button" data-carousel-prev class="absolute p-5 top-1/2 left-0 cursor-pointer rounded-full z-20 ">
             <img src="./src/images/icons/arrow-left.svg" alt="Anterior" />
           </button>
 
-          <button type="button" data-carousel-next class="absolute p-3 top-1/2 right-0 cursor-pointer rounded-full z-20">
+          <button type="button" data-carousel-next class="absolute p-5 top-1/2 right-0 cursor-pointer rounded-full z-20">
             <img src="./src/images/icons/arrow-right.svg" alt="Próximo" />
           </button>
 
           <div class="flex flex-row justify-center gap-4 absolute bottom-7 w-full z-20">
-            <button type="button" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0" class="bg-white h-[3px] w-[30px]"></button>
-            <button type="button" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1" class="bg-white h-[3px] w-[30px]"></button>
-            <button type="button" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2" class="bg-white h-[3px] w-[30px]"></button>
+            <button type="button" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0" class="bg-black opacity-80 h-[3px] w-[30px]"></button>
+            <button type="button" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1" class="bg-black opacity-80 h-[3px] w-[30px]"></button>
+            <button type="button" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2" class="bg-black h- w-[30px]"></button>
           </div>
 
         </div>
       </section>
 
       <section id="categories" class="px-7 py-6">
-        <h3> Busque por categoria: </h3>
+        <h3 class="font-bold text-2xl text-center">
+           Busque por categoria: 
+        </h3>
 
-        <div> </div>
+        <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center justify-between gap-y-4 gap-x-8 "> 
+            <div class="col-span-1">
+              <img src="./src/images/categories/camisetas.svg" alt="Camisetas" class="w-full ">
+              <button class="bg-black text-white w-full h-9 text-base py-2">
+                Camisetas
+              </button>
+            </div>
+
+            <div class="col-span-1">
+              <img src="./src/images/categories/bolsas.svg" alt="Camisetas" class="w-full ">
+              <button class="bg-black text-white w-full h-9 text-base py-2">
+                Bolsas
+              </button>
+            </div>
+
+            <div class="col-span-1">
+              <img src="./src/images/categories/calcados.svg" alt="Calçados" class="w-full ">
+              <button class="bg-black text-white w-full h-9 text-base py-2">
+                Calçados
+              </button>
+            </div>
+
+            <div class="col-span-1">
+              <img src="./src/images/categories/calcas.svg" alt="Calças" class="w-full ">
+              <button class="bg-black text-white w-full h-9 text-base py-2">
+                Calças
+              </button>
+            </div>
+
+            <div class="col-span-1">
+              <img src="./src/images/categories/casacos.svg" alt="Casacos" class="w-full ">
+              <button class="bg-black text-white w-full h-9 text-base py-2">
+                Casacos
+              </button>
+            </div>
+
+            <div class="col-span-1">
+              <img src="./src/images/categories/oculos.svg" alt="Óculos" class="w-full ">
+              <button class="bg-black text-white w-full h-9 text-base py-2">
+                Óculos
+              </button>
+            </div>
+
+
+
+
+        </div>
       </section>
 
       <section id="products" class="px-7 py-6">
