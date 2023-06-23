@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
 
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,7 @@
 
     <header class="flex flex-col items-center md:flex-row">
 
-      <section id="top-header" class="bg-black flex flex-row items-center h-14 relative md:block w-full">
+      <section id="top-header" class="bg-black flex flex-row items-center h-[58px] relative md:block w-full">
         <div class="flex flex-row justify-between px-6 md:pr-0 w-full h-full items-center md:justify-start gap-4">
           <a href="/index.html" class="transition-all ease-in hover:scale-110 duration-200">
             <img src="./src/images/icons/logo.svg" alt="Logo Meteora" />
@@ -28,7 +28,7 @@
                 <a href="" class="text-white hover:text-green-prim">Home</a>
               </li>
               <li>
-                <a href="" class="text-white hover:text-green-prim">Nossas lojas</a>
+                <a href="" class="text-white hover:text-green-prim whitespace-nowrap">Nossas lojas</a>
               </li>
               <li>
                 <a href="" class="text-white hover:text-green-prim">Novidades</a>
@@ -60,7 +60,7 @@
       </section>
 
       <section id="bottom-header"
-        class="w-full md:w-auto row-2 p-6 flex flex-row gap-2 md:bg-black md:py-2 md:pl-2 md:justify-end md:gap-4 md:h-14">
+        class="w-full md:w-auto row-2 p-6 flex flex-row gap-2 md:bg-black md:py-2 md:pl-2 md:justify-end md:gap-4 md:h-[58px]">
         <input type="text" placeholder="Digite o produto"
           class="text-[0.8rem] py-2 px-4 border border-black w-full md:w-36" />
         <button
@@ -133,7 +133,7 @@
         </div>
       </section>
 
-      <section id="categories" class="px-7 py-6">
+      <section id="categories" class="px-7 py-6 md:pt-10 lg:pt-[72px]">
         <h3 class="font-bold text-2xl text-center">
           Busque por categoria:
         </h3>
@@ -180,18 +180,80 @@
               Óculos
             </button>
           </div>
-
-
-
-
         </div>
       </section>
 
       <section id="products" class="px-7 py-6">
-        <h3>Produtos que estão bombando!</h3>
+        <h3 class="font-bold text-3xl text-center mb-8">
+          Produtos que estão bombando!
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1110px] mx-auto gap-x-7 gap-y-8">
+          <div class="col-span-1 border border-[#00000020]">
+            <img src="./src/images/products/card1.png" alt="" class="w-full ">
+            <div class="p-4 pt-3">
+              <p class="font-bold">Camiseta Conforto</p>
+              <p class="text-sm mt-3 mb-4">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
+              <p class="font-bold">R$ 70,00</p>
+              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px]">Ver mais</button>
+            </div>
+          </div>
+
+          <div class="col-span-1 border border-[#00000020]">
+            <img src="./src/images/products/card2.png" alt="" class="w-full ">
+            <div class="p-4 pt-3">
+              <p class="font-bold">Calça Alfaiataria</p>
+              <p class="text-sm mt-3 mb-4">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
+              <p class="font-bold">R$ 180,00</p>
+              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px]">Ver mais</button>
+            </div>
+          </div>
+
+          <div class="col-span-1 border border-[#00000020]">
+            <img src="./src/images/products/card3.png" alt="" class="w-full ">
+            <div class="p-4 pt-3">
+              <p class="font-bold">Tênis Chunky</p>
+              <p class="text-sm mt-3 mb-4">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
+              <p class="font-bold">R$ 250,00</p>
+              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px]">Ver mais</button>
+            </div>
+          </div>
+
+          <div class="col-span-1 border border-[#00000020]">
+            <img src="./src/images/products/card4.png" alt="" class="w-full ">
+            <div class="p-4 pt-3">
+              <p class="font-bold">Jaqueta Jeans</p>
+              <p class="text-sm mt-3 mb-4">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+              <p class="font-bold">R$ 150,00</p>
+              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px]">Ver mais</button>
+            </div>
+          </div>
+
+          <div class="col-span-1 border border-[#00000020]">
+            <img src="./src/images/products/card5.png" alt="" class="w-full ">
+            <div class="p-4 pt-3">
+              <p class="font-bold">Óculos Redondo</p>
+              <p class="text-sm mt-3 mb-4">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
+              <p class="font-bold">R$ 120,00</p>
+              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px]">Ver mais</button>
+            </div>
+          </div>
+
+          <div class="col-span-1 border border-[#00000020]">
+            <img src="./src/images/products/card6.png" alt="" class="w-full ">
+            <div class="p-4 pt-3">
+              <p class="font-bold">Bolsa coringa</p>
+              <p class="text-sm mt-3 mb-4">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
+              <p class="font-bold">R$ 120,00</p>
+              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px]">Ver mais</button>
+            </div>
+          </div>
+
+          
+        </div>
       </section>
 
-      <section id="publi" class="bg-black text-white py-8 px-7">
+      <section id="publi" class="bg-black text-white py-8 px-7 mt-6 md:mt-7 lg:mt-14">
         <h4 class="text-2xl text-center"> 
           Conheça todas as nossas facilidades 
         </h4>
@@ -229,7 +291,7 @@
         </div>
       </section>
 
-      <section id="news" class="p-10">
+      <section id="news" class="p-10 md:py-9 lg:py-16">
         <div class="border border-black py-6 px-4 max-w-[690px] mx-auto">
           <p class="text-center mb-6 px-2">
             Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!
