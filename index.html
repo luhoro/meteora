@@ -86,7 +86,7 @@
           </div>
 
           <div data-carousel-item id="banner" class=" hidden duration-700 ease-in-out">
-            <div>
+            <div class="relative">
               <img src="./src/images/banner/banner2sm.svg"
                 alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full block md:hidden">
               <img src="./src/images/banner/banner2md.svg"
@@ -94,11 +94,18 @@
                 class="w-full h-full hidden md:block lg:hidden">
               <img src="./src/images/banner/banner2lg.svg"
                 alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full hidden lg:block">
+
+              <div
+                class="absolute top-1/2 md:top-1/3 flex flex-col w-full text-center md:text-end gap-2 md:gap-4 lg:gap-5 text-white mt-6 px-12 md:pr-24 lg:pr-48">
+                <h2 class="uppercase text-3xl ">Coleção Atemporal</h2>
+                <p>Estilo e qualidade para durar</p>
+              </div>
+
             </div>
           </div>
 
           <div data-carousel-item id="banner" class="hidden duration-700 ease-in-out">
-            <div>
+            <div class="relative">
               <img src="./src/images/banner/banner3sm.svg"
                 alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental"
                 class="w-full h-full block md:hidden">
@@ -108,6 +115,10 @@
               <img src="./src/images/banner/banner3lg.svg"
                 alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental"
                 class="w-full h-full hidden lg:block">
+              <div class="absolute top-1/2 md:top-1/3 flex flex-col w-full text-center md:text-start gap-2 md:gap-4 lg:gap-5 text-white mt-6 px-12 md:pl-24 lg:pl-48">
+                <h2 class="uppercase text-3xl ">Coleção Atemporal</h2>
+                <p>Alto impacto visual, baixo impacto ambiental!</p>
+              </div>
             </div>
           </div>
 
@@ -193,7 +204,8 @@
             <img src="./src/images/products/card1.png" alt="" class="w-full ">
             <div class="p-4 pt-3">
               <p class="font-bold">Camiseta Conforto</p>
-              <p class="text-sm mt-3 mb-4">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
+              <p class="text-sm mt-3 mb-4">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.
+                Modelagem unissex.</p>
               <p class="font-bold">R$ 70,00</p>
               <button class="bg-purple-prim py-2 px-4 text-white mt-[10px]">Ver mais</button>
             </div>
@@ -243,29 +255,28 @@
             <img src="./src/images/products/card6.png" alt="" class="w-full ">
             <div class="p-4 pt-3">
               <p class="font-bold">Bolsa coringa</p>
-              <p class="text-sm mt-3 mb-4">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
+              <p class="text-sm mt-3 mb-4">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você
+                por uma vida!</p>
               <p class="font-bold">R$ 120,00</p>
               <button class="bg-purple-prim py-2 px-4 text-white mt-[10px]">Ver mais</button>
             </div>
           </div>
-
-          
         </div>
       </section>
 
       <section id="publi" class="bg-black text-white py-8 px-7 mt-6 md:mt-7 lg:mt-14">
-        <h4 class="text-2xl text-center"> 
-          Conheça todas as nossas facilidades 
+        <h4 class="text-2xl text-center">
+          Conheça todas as nossas facilidades
         </h4>
 
-        <div class="flex flex-col gap-8 mt-8 lg:flex-row justify-center w-80 lg:w-full mx-auto">
+        <div class="flex flex-col gap-8 mt-8 lg:flex-row justify-center lg:w-full mx-auto">
           <div class="flex items-center gap-6">
             <img src="./src/images/icons/pix.svg" alt="" />
             <div>
               <h5 class="text-green-prim font-bold mb-4">
                 PAGUE PELO PIX
               </h5>
-              <p >Ganhe 5% OFF em <br> pagamentos via PIX</p>
+              <p>Ganhe 5% OFF em <br> pagamentos via PIX</p>
             </div>
           </div>
 
@@ -297,7 +308,7 @@
             Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!
           </p>
           <div class="flex">
-            <input type="text" placeholder="Digite o seu email" class="w-full"/>
+            <input type="text" placeholder="Digite o seu email" class="w-full" />
             <button class="bg-purple-prim py-2 px-4 text-white">
               Enviar
             </button>
