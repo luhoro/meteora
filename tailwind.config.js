@@ -14,16 +14,11 @@ module.exports = {
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif']
-      },
-      backgroundImage: {
-        'banner-sm': "url('src/images/banner/banner1sm.svg')",
-        'banner-md': "url('src/images/banner/banner1md.svg')",
-        'banner-lg': "url('src/images/banner/banner1lg.svg')",
-      },
+      }
     },
   },
   plugins: [
-    {
+    { 
     tailwindcss: {},
     autoprefixer: {},
     },
