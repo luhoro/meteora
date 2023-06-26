@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+  .navbar {
+    @apply text-white hover:text-green-prim py-2
+  }
+
+  .buttonCategories {
+    @apply bg-black hover:text-green-prim text-white w-full h-9 text-base py-2
+  }
+
+  .products {
+    @apply col-span-1 border border-[#00000020] rounded-lg
+  }
+
+  .buttonProducts {
+    @apply bg-purple-prim py-2 px-4 text-white mt-[10px] hover:text-black rounded-md
+  }
+  
+}

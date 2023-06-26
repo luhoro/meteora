@@ -13,15 +13,15 @@ module.exports = {
         'orange-sec': '#FC9B6D',
       },
       fontFamily: {
-        'inter': ['Inter', 'sans-serif']
+        'inter': [ 'Inter', 'sans-serif' ]
       }
     },
   },
   plugins: [
-    { 
-    tailwindcss: {},
-    autoprefixer: {},
-    },
+    {
+      tailwindcss: {},
+      autoprefixer: {},
+    }
   ]
 }
 

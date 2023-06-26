@@ -25,46 +25,45 @@
           <nav class="hidden md:inline-block">
             <ul class="md:flex md:flex-row gap-5 items-center text-center">
               <li>
-                <a href="" class="text-white hover:text-green-prim">Home</a>
+                <a href="#" class="navbar">Home</a>
               </li>
               <li>
-                <a href="" class="text-white hover:text-green-prim whitespace-nowrap">Nossas lojas</a>
+                <a href="#" class="navbar whitespace-nowrap">Nossas lojas</a>
               </li>
               <li>
-                <a href="" class="text-white hover:text-green-prim">Novidades</a>
+                <a href="#" class="navbar">Novidades</a>
               </li>
               <li>
-                <a href="" class="text-white hover:text-green-prim">Promoções</a>
+                <a href="#" class="navbar">Promoções</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <nav data-mobile
-          class="z-10 absolute top-0 right-0 bg-slate-800 px-6 pt-8 hidden md:hidden transition ease-linear">
+        <nav data-mobile class="z-10 absolute top-0 right-0 bg-slate-800 px-6 pt-8 hidden md:hidden transition ease-linear">
           <ul class="flex flex-col">
             <li class="py-2 border-b border-gray-300">
-              <a href="" class="py-2 text-white hover:text-green-prim">Home</a>
+              <a href="#" class="navbar">Home</a>
             </li>
             <li class="py-2 border-b border-gray-300">
-              <a href="" class="py-2 text-white hover:text-green-prim">Nossas lojas</a>
+              <a href="#" class="navbar">Nossas lojas</a>
             </li>
             <li class="py-2 border-b border-gray-300">
-              <a href="" class="py-2 text-white hover:text-green-prim">Novidades</a>
+              <a href="#" class="navbar">Novidades</a>
             </li>
             <li class="pb-4 pt-2">
-              <a href="" class="py-2 text-white hover:text-green-prim">Promoções</a>
+              <a href="#" class="navbar">Promoções</a>
             </li>
           </ul>
         </nav>
       </section>
 
       <section id="bottom-header"
-        class="w-full md:w-auto row-2 p-6 flex flex-row gap-2 md:bg-black md:py-2 md:pl-2 md:justify-end md:gap-4 md:h-[58px]">
+        class="w-full md:w-auto row-2 gap-2 p-6 flex flex-row md:bg-black md:py-2 md:pl-2 md:justify-end md:gap-4 md:h-[58px]">
         <input type="text" placeholder="Digite o produto"
           class="text-[0.8rem] py-2 px-4 border border-black w-full md:w-36" />
         <button
-          class="text-[0.8rem] py-2 px-4 border border-black font-bold md:text-white md:border-white duration-20 md:hover:text-green-prim md:hover:border-green-prim hover:bg-green-prim">
+          class="text-[0.8rem] py-2 px-4 border border-black font-bold md:text-white md:border-white duration-20 md:hover:text-green-prim md:hover:border-green-prim hover:bg-green-prim md:hover:bg-black">
           Buscar
         </button>
       </section>
@@ -115,7 +114,8 @@
               <img src="./src/images/banner/banner3lg.svg"
                 alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental"
                 class="w-full h-full hidden lg:block">
-              <div class="absolute top-1/2 md:top-1/3 flex flex-col w-full text-center md:text-start gap-2 md:gap-4 lg:gap-5 text-white mt-6 px-8 md:pl-24 lg:pl-48">
+              <div
+                class="absolute top-1/2 md:top-1/3 flex flex-col w-full text-center md:text-start gap-2 md:gap-4 lg:gap-5 text-white mt-6 px-8 md:pl-24 lg:pl-48">
                 <h2 class="uppercase text-3xl ">Coleção Atemporal</h2>
                 <p>Alto impacto visual, baixo impacto ambiental!</p>
               </div>
@@ -151,43 +151,43 @@
 
         <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center justify-between gap-y-4 gap-x-8 ">
           <div class="col-span-1">
-            <img src="./src/images/categories/camisetas.svg" alt="Camisetas" class="w-full ">
-            <button class="bg-black hover:text-green-prim text-white w-full h-9 text-base py-2">
+            <img src="./src/images/categories/camisetas.svg" alt="Camisetas" class="w-full">
+            <button class="buttonCategories">
               Camisetas
             </button>
           </div>
 
           <div class="col-span-1">
             <img src="./src/images/categories/bolsas.svg" alt="Camisetas" class="w-full ">
-            <button class="bg-black hover:text-green-prim text-white w-full h-9 text-base py-2">
+            <button class="buttonCategories">
               Bolsas
             </button>
           </div>
 
           <div class="col-span-1">
             <img src="./src/images/categories/calcados.svg" alt="Calçados" class="w-full ">
-            <button class="bg-black hover:text-green-prim text-white w-full h-9 text-base py-2">
+            <button class="buttonCategories">
               Calçados
             </button>
           </div>
 
           <div class="col-span-1">
             <img src="./src/images/categories/calcas.svg" alt="Calças" class="w-full ">
-            <button class="bg-black hover:text-green-prim text-white w-full h-9 text-base py-2">
+            <button class="buttonCategories">
               Calças
             </button>
           </div>
 
           <div class="col-span-1">
             <img src="./src/images/categories/casacos.svg" alt="Casacos" class="w-full ">
-            <button class="bg-black hover:text-green-prim text-white w-full h-9 text-base py-2">
+            <button class="buttonCategories">
               Casacos
             </button>
           </div>
 
           <div class="col-span-1">
             <img src="./src/images/categories/oculos.svg" alt="Óculos" class="w-full ">
-            <button class=" bg-black hover:text-green-prim text-white w-full h-9 text-base py-2">
+            <button class=" buttonCategories">
               Óculos
             </button>
           </div>
@@ -200,65 +200,65 @@
         </h3>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1110px] mx-auto gap-x-7 gap-y-8">
-          <div class="col-span-1 border border-[#00000020]">
+          <div class="products">
             <img src="./src/images/products/card1.png" alt="" class="w-full ">
             <div class="p-4 pt-3">
               <p class="font-bold">Camiseta Conforto</p>
               <p class="text-sm mt-3 mb-4">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.
                 Modelagem unissex.</p>
               <p class="font-bold">R$ 70,00</p>
-              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px] hover:text-black">Ver mais</button>
+              <button class="buttonProducts">Ver mais</button>
             </div>
           </div>
 
-          <div class="col-span-1 border border-[#00000020]">
+          <div class="products">
             <img src="./src/images/products/card2.png" alt="" class="w-full ">
             <div class="p-4 pt-3">
               <p class="font-bold">Calça Alfaiataria</p>
               <p class="text-sm mt-3 mb-4">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
               <p class="font-bold">R$ 180,00</p>
-              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px] hover:text-black">Ver mais</button>
+              <button class="buttonProducts">Ver mais</button>
             </div>
           </div>
 
-          <div class="col-span-1 border border-[#00000020]">
+          <div class="products">
             <img src="./src/images/products/card3.png" alt="" class="w-full ">
             <div class="p-4 pt-3">
               <p class="font-bold">Tênis Chunky</p>
               <p class="text-sm mt-3 mb-4">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
               <p class="font-bold">R$ 250,00</p>
-              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px] hover:text-black">Ver mais</button>
+              <button class="buttonProducts">Ver mais</button>
             </div>
           </div>
 
-          <div class="col-span-1 border border-[#00000020]">
+          <div class="products">
             <img src="./src/images/products/card4.png" alt="" class="w-full ">
             <div class="p-4 pt-3">
               <p class="font-bold">Jaqueta Jeans</p>
               <p class="text-sm mt-3 mb-4">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
               <p class="font-bold">R$ 150,00</p>
-              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px] hover:text-black">Ver mais</button>
+              <button class="buttonProducts">Ver mais</button>
             </div>
           </div>
 
-          <div class="col-span-1 border border-[#00000020]">
+          <div class="products">
             <img src="./src/images/products/card5.png" alt="" class="w-full ">
             <div class="p-4 pt-3">
               <p class="font-bold">Óculos Redondo</p>
               <p class="text-sm mt-3 mb-4">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
               <p class="font-bold">R$ 120,00</p>
-              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px] hover:text-black">Ver mais</button>
+              <button class="buttonProducts">Ver mais</button>
             </div>
           </div>
 
-          <div class="col-span-1 border border-[#00000020]">
+          <div class="products">
             <img src="./src/images/products/card6.png" alt="" class="w-full ">
             <div class="p-4 pt-3">
               <p class="font-bold">Bolsa coringa</p>
               <p class="text-sm mt-3 mb-4">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você
                 por uma vida!</p>
               <p class="font-bold">R$ 120,00</p>
-              <button class="bg-purple-prim py-2 px-4 text-white mt-[10px] hover:text-black">Ver mais</button>
+              <button class="buttonProducts">Ver mais</button>
             </div>
           </div>
         </div>
