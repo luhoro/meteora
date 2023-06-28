@@ -20,7 +20,7 @@
             <img src="./src/images/icons/logo.svg" alt="Logo Meteora" />
           </a>
 
-          <img id="menu-switch" src="./src/images/icons/menu.svg" alt="menu" class="z-50 md:hidden cursor-pointer" />
+          <img id="menu-switch" src="./src/images/icons/menu.svg" alt="menu" class="z-20 md:hidden cursor-pointer" />
 
           <nav class="hidden md:inline-block">
             <ul class="md:flex md:flex-row gap-5 items-center text-center">
@@ -40,7 +40,8 @@
           </nav>
         </div>
 
-        <nav data-mobile class="z-10 absolute top-0 right-0 bg-slate-800 px-6 pt-8 hidden md:hidden transition ease-linear">
+        <nav data-mobile
+          class="z-10 absolute top-0 right-0 bg-slate-800 px-6 pt-8 hidden md:hidden transition ease-linear">
           <ul class="flex flex-col">
             <li class="py-2 border-b border-gray-300">
               <a href="#" class="navbar">Home</a>
@@ -302,7 +303,7 @@
         </div>
       </section>
 
-      <section id="news" class="p-10 md:py-9 lg:py-16">
+      <section id="email" class="p-10 md:py-9 lg:py-16">
         <div class="border border-black py-6 px-4 max-w-[690px] mx-auto">
           <p class="text-center mb-6 px-2">
             Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!
@@ -317,6 +318,21 @@
         </div>
       </section>
     </main>
+
+    <dialog data-email class="fixed top-0 w-full p-0 z-30 shadow-modal ">
+      <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center lg:px-28">
+        <img src="./src/images/icons/check.svg" alt="">
+        <p class="text-white text-xl w-full"> E-mail cadastrado com sucesso! </p>
+
+        <button id="closeModal">
+          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro">
+        </button>
+      </div>
+
+      <div class="bg-white p-4 lg:px-28">
+        <p>Em breve você receberá novidades exclusivas da Meteora.</p>
+      </div>
+    </dialog>
 
     <footer class="bg-black text-white px-6 py-4">
       <div class="mx-auto flex flex-col md:flex-row md:justify-center md:gap-1">
