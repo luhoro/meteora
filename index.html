@@ -305,21 +305,30 @@
 
       <section id="email" class="p-10 md:py-9 lg:py-16">
         <div class="border border-black py-6 px-4 max-w-[690px] mx-auto">
-          <p class="text-center mb-6 px-2">
-            Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!
-          </p>
-          <div class="flex">
-            <input type="text" placeholder="Digite o seu email" class="w-full" />
-            <button class="bg-purple-prim py-2 px-4 text-white hover:text-black">
+          <p class="text-center mb-6 px-2">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
+          
+          <form data-form-email class="flex relative">
+            <p id="errorEmail" class="absolute -top-[20px] text-red-500"></p>
+
+            <input id="inputEmail" type="text" placeholder="Digite o seu email" class="w-full" />
+            <button type="submit" class="bg-purple-prim py-2 px-4 text-white hover:text-black">
               Enviar
             </button>
-          </div>
+          </form>
 
         </div>
       </section>
     </main>
 
-    <dialog data-email class="fixed top-0 w-full p-0 z-30 shadow-modal ">
+    <footer class="bg-black text-white px-6 py-4">
+      <div class="mx-auto flex flex-col md:flex-row md:justify-center md:gap-1">
+        <p class="text-center"> 2023 © Desenvolvido por Luisa Horowitz | </p>
+        <p class="text-center"> Projeto fictício sem fins comerciais. </p>
+      </div>
+    </footer>
+
+    <!-- MODAL STRUCTURES -->
+    <dialog data-email class="fixed top-0 w-full p-0 z-30 shadow-modal">
       <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center lg:px-28">
         <img src="./src/images/icons/check.svg" alt="">
         <p class="text-white text-xl w-full"> E-mail cadastrado com sucesso! </p>
@@ -409,13 +418,6 @@
 
       </div>
     </dialog>
-
-    <footer class="bg-black text-white px-6 py-4">
-      <div class="mx-auto flex flex-col md:flex-row md:justify-center md:gap-1">
-        <p class="text-center"> 2023 © Desenvolvido por Luisa Horowitz | </p>
-        <p class="text-center"> Projeto fictício sem fins comerciais. </p>
-      </div>
-    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
     <script type="module" src="./src/scripts/script.js"></script>

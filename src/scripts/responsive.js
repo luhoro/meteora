@@ -1,4 +1,4 @@
-export default function headerMenu() {
+function headerMenu() {
   const menuButton = document.querySelector('#menu-switch')
   const menu = document.querySelector('[data-mobile]')
 
@@ -18,6 +18,9 @@ export default function headerMenu() {
 
   menuButton.addEventListener('click', () => {
     toggleButton()
-    console.log('aaaa')
   })  
+}
+
+export const responsive = {
+  headerMenu
 }
