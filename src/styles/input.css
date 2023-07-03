@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-
   .navbar {
     @apply text-white hover:text-green-prim py-2
   }
@@ -20,4 +19,26 @@
     @apply bg-purple-prim py-2 px-4 text-white mt-[10px] hover:text-black rounded-md
   }
   
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #00000070;
+    border-radius: 100vh;
+    border: 1px solid #fff;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #00000090;
+  }
 }

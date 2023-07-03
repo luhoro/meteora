@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./src/styles/output.css" />
   </head>
 
-  <body class="min-h-screen bg-white font-inter">
+  <body class="font-inter scroll-smooth scrollbar">
 
     <header class="flex flex-col items-center md:flex-row">
 
@@ -305,8 +305,9 @@
 
       <section id="email" class="p-10 md:py-9 lg:py-16">
         <div class="border border-black py-6 px-4 max-w-[690px] mx-auto">
-          <p class="text-center mb-6 px-2">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</p>
-          
+          <p class="text-center mb-6 px-2">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira
+            compra? Cadastre-se!</p>
+
           <form data-form-email class="flex relative">
             <p id="errorEmail" class="absolute -top-[20px] text-red-500"></p>
 
@@ -328,94 +329,95 @@
     </footer>
 
     <!-- MODAL STRUCTURES -->
-    <dialog data-email class="fixed top-0 w-full p-0 z-30 shadow-modal">
+    <dialog data-product class="fixed p-0 z-30 backdrop:bg-[#00000080] scrollbar">
+      <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center ">
+        <img src="./src/images/icons/check.svg" alt="">
+        <p class="text-white text-xl w-full"> Confira detalhes sobre o produto </p>
+
+        <button id="closeProductModal" class="">
+          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro">
+        </button>
+      </div>
+
+      <div class="bg-white p-4 ">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full md:border md:border-gray-300">
+          <img src="./src/images/products/card4.png" alt="" class="w-full place-self-center bg-contain bg-center">
+
+          
+            <div class="grid grid-cols-1 px-4 pt-6  gap-4 h-full">
+              <div class="flex flex-col justify-between gap-6">
+                <span class="font-bold">Jaqueta Jeans</span>
+                <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+                <div class="w-full h-[1px] bg-black"></div>
+                <p class="text-xl font-bold">R$ 150,00</p>
+                <p class="text-gray-400">Vendido e entregue por Riachuelo</p>
+              </div>
+
+              <div id="color" class="border-t border-gray-prim">
+                <p class="py-4 font-bold">Cores:</p>
+
+                <div class="flex gap-5">
+                  <div class="flex flex-col gap-2 items-center">
+                    <input type="radio" name="color" id="blue"><label for="blue">Azul Claro</label>
+                  </div>
+
+                  <div class="flex flex-col gap-2 items-center">
+                    <input type="radio" name="color" id="white"><label for="white">Offwhite</label>
+                  </div>
+
+                  <div class="flex flex-col gap-2 items-center">
+                    <input type="radio" name="color" id="black"><label for="black">Preto</label>
+                  </div>
+                </div>
+              </div>
+
+              <div id="size" class="border-t border-gray-prim">
+                <p class="py-4 font-bold">Tamanho:</p>
+
+                <div class="flex gap-5">
+                  <div class="flex flex-col gap-2 items-center">
+                    <input type="radio" name="num" id="p"><label for="p">P</label>
+                  </div>
+
+                  <div class="flex flex-col gap-2 items-center">
+                    <input type="radio" name="num" id="pp"><label for="pp">PP</label>
+                  </div>
+
+                  <div class="flex flex-col gap-2 items-center">
+                    <input type="radio" name="num" id="m"><label for="m">M</label>
+                  </div>
+
+                  <div class="flex flex-col gap-2 items-center">
+                    <input type="radio" name="num" id="g"><label for="g">G</label>
+                  </div>
+
+                  <div class="flex flex-col gap-2 items-center">
+                    <input type="radio" name="num" id="gg"><label for="gg">G</label>
+                  </div>
+                </div>
+              </div>
+
+              <button class="w-fit px-4 py-2 mb-4 bg-purple-prim text-white font-bold">Adicionar à sacola</button>
+            </div>
+          
+        </div>
+
+      </div>
+    </dialog>
+
+    <dialog data-email class="fixed w-full p-0 z-30 shadow-modal backdrop:bg-[#00000080] scrollbar">
       <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center lg:px-28">
         <img src="./src/images/icons/check.svg" alt="">
         <p class="text-white text-xl w-full"> E-mail cadastrado com sucesso! </p>
 
-        <button id="closeModal">
+        <button id="closeEmailModal">
           <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro">
         </button>
       </div>
 
       <div class="bg-white p-4 lg:px-28">
         <p>Em breve você receberá novidades exclusivas da Meteora.</p>
-      </div>
-    </dialog>
-
-    <dialog data-product class="absolute top-0 w-full min-h-screen p-0 z-30 ">
-      <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center lg:px-28">
-        <img src="./src/images/icons/check.svg" alt="">
-        <p class="text-white text-xl w-full"> Confira detalhes sobre o produto </p>
-
-        <button id="closeModal" class="">
-          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro">
-        </button>
-      </div>
-
-      <div class="bg-white p-4 lg:px-28 grid grid-cols-1 md:grid-cols-2 place-content-center min-h-full ">
-        <img src="./src/images/products/card4.png" alt="" class="w-full max-w-[710px] place-self-center bg-contain bg-center">
-
-        <div class="px-4 pt-6 border border-gray-300 border-t-0 md:border-0 grid grid-cols-1 h-full place-items-center">
-          <div class=" flex flex-col justify-between gap-4 h-fit">
-            <div class="flex flex-col justify-between gap-6">
-              <span class="font-bold">Jaqueta Jeans</span>
-              <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
-              <div class="w-full h-[1px] bg-black"></div>
-              <p class="text-xl font-bold">R$ 150,00</p>
-              <p class="text-gray-400">Vendido e entregue por Riachuelo</p>
-            </div>
-
-            <div id="color" class="border-t border-gray-prim">
-              <p class="py-4 font-bold">Cores:</p>
-
-              <div class="flex gap-5">
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="color" id="blue"><label for="blue">Azul Claro</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="color" id="white"><label for="white">Offwhite</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="color" id="black"><label for="black">Preto</label>
-                </div>
-              </div>
-            </div>
-
-            <div id="size" class="border-t border-gray-prim">
-              <p class="py-4 font-bold">Tamanho:</p>
-
-              <div class="flex gap-5">
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="p"><label for="p">P</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="pp"><label for="pp">PP</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="m"><label for="m">M</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="g"><label for="g">G</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="gg"><label for="gg">G</label>
-                </div>
-              </div>
-            </div>
-
-            <button class="w-fit px-4 py-2 mb-4 bg-purple-prim text-white font-bold">
-              Adicionar à sacola
-            </button>
-          </div>
-        </div>
-
       </div>
     </dialog>
 

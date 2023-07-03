@@ -1,11 +1,11 @@
-function emailConfirm(event) {
+function emailConfirm() {
 
   // VARIABLES
   const formEmail = document.querySelector('[data-form-email]')
   const inputEmail = document.querySelector('#inputEmail')
   const errorEmail = document.querySelector('#errorEmail')
   const modalEmail = document.querySelector('[data-email]')
-  const closeModal = document.querySelector('#closeModal')
+  const closeModal = document.querySelector('#closeEmailModal')
 
 
   // FUNCTIONS
@@ -19,7 +19,7 @@ function emailConfirm(event) {
       errorEmail.innerHTML = 'Por favor, insira um email válido!'
 
     } else {
-      modalEmail.show()
+      modalEmail.showModal()
       setTimeout(() => modalEmail.close(), 4000)
       errorEmail.innerHTML = ''
       

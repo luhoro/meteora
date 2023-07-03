@@ -593,6 +593,10 @@ video {
   position: relative;
 }
 
+.-top-\[20px\] {
+  top: -20px;
+}
+
 .bottom-5 {
   bottom: 1.25rem;
 }
@@ -611,26 +615,6 @@ video {
 
 .top-1\/2 {
   top: 50%;
-}
-
-.-top-8 {
-  top: -2rem;
-}
-
-.-top-4 {
-  top: -1rem;
-}
-
-.-top-5 {
-  top: -1.25rem;
-}
-
-.-top-\[17px\] {
-  top: -17px;
-}
-
-.-top-\[20px\] {
-  top: -20px;
 }
 
 .z-0 {
@@ -710,21 +694,8 @@ video {
   height: 58px;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .h-full {
   height: 100%;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-\[30px\] {
@@ -748,10 +719,6 @@ video {
   max-width: 690px;
 }
 
-.max-w-\[710px\] {
-  max-width: 710px;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -770,14 +737,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.place-content-center {
-  place-content: center;
-}
-
-.place-items-center {
-  place-items: center;
 }
 
 .items-center {
@@ -860,10 +819,6 @@ video {
 
 .border-t {
   border-top-width: 1px;
-}
-
-.border-t-0 {
-  border-top-width: 0px;
 }
 
 .border-black {
@@ -1049,19 +1004,14 @@ video {
   color: rgb(209 240 121 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
-}
-
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-80 {
@@ -1106,6 +1056,30 @@ video {
 
 .ease-linear {
   transition-timing-function: linear;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #00000070;
+  border-radius: 100vh;
+  border: 1px solid #fff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #00000090;
+}
+
+.backdrop\:bg-\[\#00000080\]::backdrop {
+  background-color: #00000080;
 }
 
 .hover\:scale-110:hover {
@@ -1193,8 +1167,13 @@ video {
     gap: 1rem;
   }
 
-  .md\:border-0 {
-    border-width: 0px;
+  .md\:border {
+    border-width: 1px;
+  }
+
+  .md\:border-gray-300 {
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
   }
 
   .md\:border-white {
