@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-br">
 
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
     <title>Meteora</title>
     <link rel="shortcut icon" href="src/images/favicon.svg" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./src/styles/output.css" />
+    <link rel="stylesheet" href="src/styles/output.css" />
   </head>
 
   <body class="font-inter scroll-smooth scrollbar">
@@ -17,10 +17,10 @@
       <section id="top-header" class="bg-black flex flex-row items-center h-[58px] relative md:block w-full">
         <div class="flex flex-row justify-between px-6 md:pr-0 w-full h-full items-center md:justify-start gap-4">
           <a href="/meteora" class="transition-all ease-in hover:scale-110 duration-200">
-            <img src="./src/images/icons/logo.svg" alt="Logo Meteora" />
+            <img src="src/images/icons/logo.svg" alt="Logo Meteora" />
           </a>
 
-          <img id="menu-switch" src="./src/images/icons/menu.svg" alt="menu" class="z-20 md:hidden cursor-pointer" />
+          <img id="menu-switch" src="src/images/icons/menu.svg" alt="menu" class="z-20 md:hidden cursor-pointer" />
 
           <nav class="hidden md:inline-block">
             <ul class="md:flex md:flex-row gap-5 items-center text-center">
@@ -76,24 +76,24 @@
         <div id="wrapper" data-carousel="static" class="relative overflow-hidden">
           <div data-carousel-item active id="wrapper-carousel" class="relative hidden duration-700 ease-in-out">
             <div>
-              <img src="./src/images/banner/banner1sm.svg" alt="Banner Meteora moda de impacto positivo"
+              <img src="src/images/banner/banner1sm.png" alt="Banner Meteora moda de impacto positivo"
                 class="w-full h-full block md:hidden" />
-              <img src="./src/images/banner/banner1md.svg" alt="Banner Meteora moda de impacto positivo"
+              <img src="src/images/banner/banner1md.png" alt="Banner Meteora moda de impacto positivo"
                 class="w-full h-full hidden md:block lg:hidden" />
-              <img src="./src/images/banner/banner1lg.svg" alt="Banner Meteora moda de impacto positivo"
+              <img src="src/images/banner/banner1lg.png" alt="Banner Meteora moda de impacto positivo"
                 class="w-full h-full hidden lg:block" />
             </div>
           </div>
 
           <div data-carousel-item id="banner" class=" hidden duration-700 ease-in-out">
             <div class="relative">
-              <img src="./src/images/banner/banner2sm.svg"
-                alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full block md:hidden">
-              <img src="./src/images/banner/banner2md.svg"
+              <img src="src/images/banner/banner2sm.png"
+                alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full block md:hidden"/>
+              <img src="src/images/banner/banner2md.png"
                 alt="Banner Coleção Atemporal, estilo e qualidade para durar."
-                class="w-full h-full hidden md:block lg:hidden">
-              <img src="./src/images/banner/banner2lg.svg"
-                alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full hidden lg:block">
+                class="w-full h-full hidden md:block lg:hidden"/>
+              <img src="src/images/banner/banner2lg.png"
+                alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full hidden lg:block"/>
 
               <div
                 class="absolute top-1/2 md:top-1/3 flex flex-col w-full text-center md:text-end gap-2 md:gap-4 lg:gap-5 text-white mt-6 px-12 md:pr-24 lg:pr-48">
@@ -106,15 +106,15 @@
 
           <div data-carousel-item id="banner" class="hidden duration-700 ease-in-out">
             <div class="relative">
-              <img src="./src/images/banner/banner3sm.svg"
+              <img src="src/images/banner/banner3sm.png"
                 alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental"
-                class="w-full h-full block md:hidden">
-              <img src="./src/images/banner/banner3md.svg"
+                class="w-full h-full block md:hidden"/>
+              <img src="src/images/banner/banner3md.png"
                 alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental"
-                class="w-full h-full hidden md:block lg:hidden">
-              <img src="./src/images/banner/banner3lg.svg"
+                class="w-full h-full hidden md:block lg:hidden"/>
+              <img src="src/images/banner/banner3lg.png"
                 alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental"
-                class="w-full h-full hidden lg:block">
+                class="w-full h-full hidden lg:block"/>
               <div
                 class="absolute top-1/2 md:top-1/3 flex flex-col w-full text-center md:text-start gap-2 md:gap-4 lg:gap-5 text-white mt-6 px-8 md:pl-24 lg:pl-48">
                 <h2 class="uppercase text-3xl ">Coleção Atemporal</h2>
@@ -125,12 +125,12 @@
 
           <button type="button" data-carousel-prev
             class="absolute p-5 top-1/2 left-0 cursor-pointer rounded-full z-20 ">
-            <img src="./src/images/icons/arrow-left.svg" alt="Anterior" />
+            <img src="src/images/icons/arrow-left.svg" alt="Anterior" />
           </button>
 
           <button type="button" data-carousel-next
             class="absolute p-5 top-1/2 right-0 cursor-pointer rounded-full z-20">
-            <img src="./src/images/icons/arrow-right.svg" alt="Próximo" />
+            <img src="src/images/icons/arrow-right.svg" alt="Próximo" />
           </button>
 
           <div class="flex flex-row justify-center gap-4 absolute bottom-5 w-full z-20">
@@ -141,7 +141,6 @@
             <button type="button" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"
               class="bg-black h- w-[30px]"></button>
           </div>
-
         </div>
       </section>
 
@@ -152,42 +151,42 @@
 
         <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center justify-between gap-y-4 gap-x-8 ">
           <div class="col-span-1">
-            <img src="./src/images/categories/camisetas.svg" alt="Camisetas" class="w-full">
+            <img src="src/images/categories/camisetas.png" alt="Camisetas" class="w-full"/>
             <button class="buttonCategories">
               Camisetas
             </button>
           </div>
 
           <div class="col-span-1">
-            <img src="./src/images/categories/bolsas.svg" alt="Camisetas" class="w-full ">
+            <img src="src/images/categories/bolsas.png" alt="Camisetas" class="w-full "/>
             <button class="buttonCategories">
               Bolsas
             </button>
           </div>
 
           <div class="col-span-1">
-            <img src="./src/images/categories/calcados.svg" alt="Calçados" class="w-full ">
+            <img src="src/images/categories/calcados.png" alt="Calçados" class="w-full "/>
             <button class="buttonCategories">
               Calçados
             </button>
           </div>
 
           <div class="col-span-1">
-            <img src="./src/images/categories/calcas.svg" alt="Calças" class="w-full ">
+            <img src="src/images/categories/calcas.png" alt="Calças" class="w-full "/>
             <button class="buttonCategories">
               Calças
             </button>
           </div>
 
           <div class="col-span-1">
-            <img src="./src/images/categories/casacos.svg" alt="Casacos" class="w-full ">
+            <img src="src/images/categories/casacos.png" alt="Casacos" class="w-full "/>
             <button class="buttonCategories">
               Casacos
             </button>
           </div>
 
           <div class="col-span-1">
-            <img src="./src/images/categories/oculos.svg" alt="Óculos" class="w-full ">
+            <img src="src/images/categories/oculos.png" alt="Óculos" class="w-full "/>
             <button class=" buttonCategories">
               Óculos
             </button>
@@ -202,7 +201,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1110px] mx-auto gap-x-7 gap-y-8">
           <div class="product">
-            <img src="./src/images/products/card1.png" alt="" class="w-full ">
+            <img src="src/images/products/card1.png" alt="" class="w-full "/>
             <div class="p-4 pt-3">
               <h4 class="font-bold">Camiseta Conforto</h4>
               <span class="text-sm mt-3 mb-4">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.
@@ -213,7 +212,7 @@
           </div>
 
           <div class="product">
-            <img src="./src/images/products/card2.png" alt="" class="w-full ">
+            <img src="src/images/products/card2.png" alt="" class="w-full "/>
             <div class="p-4 pt-3">
               <h4 class="font-bold">Calça Alfaiataria</h4>
               <span class="text-sm mt-3 mb-4">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</span>
@@ -223,7 +222,7 @@
           </div>
 
           <div class="product">
-            <img src="./src/images/products/card3.png" alt="" class="w-full ">
+            <img src="src/images/products/card3.png" alt="" class="w-full "/>
             <div class="p-4 pt-3">
               <h4 class="font-bold">Tênis Chunky</h4>
               <span class="text-sm mt-3 mb-4">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</span>
@@ -233,7 +232,7 @@
           </div>
 
           <div class="product">
-            <img src="./src/images/products/card4.png" alt="" class="w-full ">
+            <img src="src/images/products/card4.png" alt="" class="w-full "/>
             <div class="p-4 pt-3">
               <h4 class="font-bold">Jaqueta Jeans</h4>
               <span class="text-sm mt-3 mb-4">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</span>
@@ -243,7 +242,7 @@
           </div>
 
           <div class="product">
-            <img src="./src/images/products/card5.png" alt="" class="w-full ">
+            <img src="src/images/products/card5.png" alt="" class="w-full "/>
             <div class="p-4 pt-3">
               <h4 class="font-bold">Óculos Redondo</h4>
               <span class="text-sm mt-3 mb-4">Armação metálica em grafite com lentes arredondadas. Sem erro!</span>
@@ -253,7 +252,7 @@
           </div>
 
           <div class="product">
-            <img src="./src/images/products/card6.png" alt="" class="w-full ">
+            <img src="src/images/products/card6.png" alt="" class="w-full "/>
             <div class="p-4 pt-3">
               <h4 class="font-bold">Bolsa coringa</h4>
               <span class="text-sm mt-3 mb-4">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você
@@ -272,7 +271,7 @@
 
         <div class="flex flex-col gap-8 mt-8 w-fit mx-auto lg:flex-row justify-center">
           <div class="flex items-center gap-6 w-fit ">
-            <img src="./src/images/icons/pix.svg" alt="" />
+            <img src="src/images/icons/pix.svg" alt="" />
             <div>
               <h5 class="text-green-prim font-bold mb-4 uppercase">
                 Pague pelo pix
@@ -282,7 +281,7 @@
           </div>
 
           <div class="flex items-center gap-6 w-fit ">
-            <img src="./src/images/icons/switch.svg" alt="" />
+            <img src="src/images/icons/switch.svg" alt="" />
             <div>
               <h5 class="text-green-prim font-bold mb-4 uppercase">
                 Troca grátis
@@ -292,7 +291,7 @@
           </div>
 
           <div class="flex items-center gap-6 w-fit ">
-            <img src="./src/images/icons/flower.svg" alt="" />
+            <img src="src/images/icons/flower.svg" alt="" />
             <div>
               <h5 class="text-green-prim font-bold mb-4 uppercase">
                 Sustentabilidade
@@ -305,8 +304,8 @@
 
       <section id="email" class="p-10 md:py-9 lg:py-16">
         <div class="border border-black py-6 px-4 max-w-[690px] mx-auto">
-          <span class="text-center mb-6 px-2">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira
-            compra? Cadastre-se!</span>
+          <p class="text-center mb-6 px-2">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira
+            compra? Cadastre-se!</p>
 
           <form data-form-email class="flex relative border border-black border-spacing-4">
             <span id="errorEmail" class="absolute -top-[20px] text-red-500"></span>
@@ -332,18 +331,18 @@
     <!-- MODAL STRUCTURES -->
     <dialog data-product class="fixed p-0 z-30 backdrop:bg-[#00000080] scrollbar">
       <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center ">
-        <img src="./src/images/icons/check.svg" alt="">
+        <img src="./src/images/icons/check.svg" alt=""/>
         <p class="text-white text-xl w-full"> Confira detalhes sobre o produto </p>
 
         <button id="closeProductModal" class="">
-          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro">
+          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro"/>
         </button>
       </div>
 
       <div class="bg-white p-4 ">
 
         <div class="grid grid-cols-1 md:grid-cols-2 w-full md:border md:border-gray-300">
-          <img src="./src/images/products/card4.png" alt="" class="w-full place-self-center bg-contain bg-center">
+          <img src="./src/images/products/card4.png" alt="" class="w-full place-self-center bg-contain bg-center"/>
 
           
             <div class="grid grid-cols-1 px-4 pt-6  gap-4 h-full">
@@ -351,7 +350,7 @@
                 <h4 class="font-bold">Jaqueta Jeans</h4>
                 <span>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</span>
                 <div class="w-full h-[1px] bg-black"></div>
-                <span class="text-xl font-bold">R$ 150,00</span>
+                <p class="text-xl font-bold">R$ 150,00</p>
                 <span class="text-gray-400">Vendido e entregue por Riachuelo</span>
               </div>
 
@@ -409,11 +408,11 @@
 
     <dialog data-email class="fixed w-full p-0 z-30 shadow-modal backdrop:bg-[#00000080] scrollbar">
       <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center lg:px-28">
-        <img src="./src/images/icons/check.svg" alt="">
+        <img src="./src/images/icons/check.svg" alt=""/>
         <span class="text-white text-xl w-full"> E-mail cadastrado com sucesso! </span>
 
         <button id="closeEmailModal">
-          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro">
+          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro"/>
         </button>
       </div>
 
