@@ -2,7 +2,7 @@
 module.exports = {
   enabled: true,
   content: [
-    "./src/**/*.{html, js}"
+    "./**/*.{html, js}"
   ],
   theme: {
     extend: {
@@ -15,9 +15,6 @@ module.exports = {
       },
       fontFamily: {
         'inter': [ 'Inter', 'sans-serif' ]
-      },
-      boxShadow: {
-        "modal": "0px 0px 20px 0px #00000050" 
       }
     },
   },

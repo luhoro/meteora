@@ -2,59 +2,59 @@
   "products": [
     {
       "id": 1,
-      "nome": "Camiseta Conforto",
-      "categoria": "camisetas",
-      "descricao": "Multicores e tamanhoss. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
-      "preco": 70,
+      "name": "Camiseta Conforto",
+      "category": "Camisetas",
+      "description": "Multicolors e sizess. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+      "price": 70,
       "src": "https://images.unsplash.com/photo-1520013633827-6724d7d57eb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-      "cores": [
+      "colors": [
         "Mostarda",
         "Vermelho",
         "Preto"
       ],
-      "tamanhos": [
+      "sizes": [
         "PP",
         "P",
         "M",
         "G",
         "GG"
       ],
-      "categoria_id": 1
+      "category_id": 1
     },
     {
       "id": 2,
-      "nome": "Calça Alfaiataria",
-      "categoria": "calcas",
-      "descricao": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
-      "preco": 180,
+      "name": "Calça Alfaiataria",
+      "category": "Calças",
+      "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
+      "price": 180,
       "src": "https://images.unsplash.com/photo-1614251055880-ee96e4803393?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-      "cores": [
+      "colors": [
         "Bege",
         "Marrom",
         "Preto"
       ],
-      "tamanhos": [
+      "sizes": [
         "PP",
         "P",
         "M",
         "G",
         "GG"
       ],
-      "categoria_id": 4
+      "category_id": 4
     },
     {
       "id": 3,
-      "nome": "Tênis Chunky",
-      "categoria": "calcados",
-      "descricao": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
-      "preco": 250,
+      "name": "Tênis Chunky",
+      "category": "Calçados",
+      "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
+      "price": 250,
       "src": "https://images.unsplash.com/photo-1542674684-d14b3e0d9763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-      "cores": [
+      "colors": [
         "branco",
         "Cinza",
         "Preto"
       ],
-      "tamanhos": [
+      "sizes": [
         36,
         37,
         38,
@@ -63,117 +63,117 @@
         41,
         42
       ],
-      "categoria_id": 3
+      "category_id": 3
     },
     {
       "id": 4,
-      "nome": "Jaqueta Jeans",
-      "categoria": "casacos",
-      "descricao": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica! ",
-      "preco": 150,
+      "name": "Jaqueta Jeans",
+      "category": "Casacos",
+      "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica! ",
+      "price": 150,
       "src": "https://images.unsplash.com/photo-1614693348454-1e0710d21c60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
-      "cores": [
+      "colors": [
         "Azul Claro",
         "Offwhite",
         "Preto"
       ],
-      "tamanhos": [
+      "sizes": [
         "PP",
         "P",
         "M",
         "G",
         "GG"
       ],
-      "categoria_id": 5
+      "category_id": 5
     },
     {
       "id": 5,
-      "nome": "Óculos Redondo",
-      "categoria": "oculos",
-      "descricao": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
-      "preco": 120,
+      "name": "Óculos Redondo",
+      "category": "Óculos",
+      "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
+      "price": 120,
       "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSseTnJU6MkReUY1Wp2dy-9udCQ3_9vVKPwH92eRNJMyifZiaiS",
-      "cores": [
+      "colors": [
         "Branco",
         "Vermelho",
         "Preto"
       ],
-      "tamanhos": [
+      "sizes": [
         "Único"
       ],
-      "categoria_id": 6
+      "category_id": 6
     },
     {
       "id": 6,
-      "nome": "Bolsa Coringa",
-      "categoria": "bolsas",
-      "descricao": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
-      "preco": 120,
+      "name": "Bolsa Coringa",
+      "category": "Bolsas",
+      "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
+      "price": 120,
       "src": "https://images.unsplash.com/photo-1610152563300-94d6cf5608b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-      "cores": [
+      "colors": [
         "Marrom claro",
         "Marrom escuro"
       ],
-      "tamanhos": [
+      "sizes": [
         "Único"
       ],
-      "categoria_id": 2
+      "category_id": 2
     },
     {
       "id": 7,
-      "nome": "Camisa Estonada",
-      "categoria": "camisetas",
-      "descricao": "Camisa gola alta, elegante e versátil. Ideal para o dia a dia!",
-      "preco": 90,
+      "name": "Camisa Estonada",
+      "category": "Camisetas",
+      "description": "Camisa gola alta, elegante e versátil. Ideal para o dia a dia!",
+      "price": 90,
       "src": "https://images.unsplash.com/photo-1549570652-97324981a6fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-      "cores": [
+      "colors": [
         "Bordô",
         "Marrom",
         "Verde",
         "Preto"
       ],
-      "tamanhos": [
+      "sizes": [
         "PP",
         "P",
         "M",
         "G",
         "GG"
       ],
-      "categoria_id": 1
+      "category_id": 1
     },
     {
       "id": 8,
-      "nome": "Calça Jeans",
-      "categoria": "calcas",
-      "descricao": "Calça Jeans de acabamento largo com pequenos rasgos. Combina estilo e causalidade! ",
-      "preco": 140,
+      "name": "Calça Jeans",
+      "category": "Calças",
+      "description": "Calça Jeans de acabamento largo com pequenos rasgos. Combina estilo e causalidade! ",
+      "price": 140,
       "src": "https://images.unsplash.com/photo-1582552938357-32b906df40cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhbCVDMyVBN2ElMjBqZWFuc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "cores": [
+      "colors": [
         "Azul Claro",
         "Azul Escuro",
         "Cinza"
       ],
-      "tamanhos": [
+      "sizes": [
         "P",
         "M",
         "G",
         "GG"
       ],
-      "categoria_id": 4
+      "category_id": 4
     },
     {
       "id": 9,
-      "nome": "Tênis Esportivo",
-      "categoria": "calcados",
-      "descricao": "Tênis construído em uma base de couro completo comlínguas de marra e forro. Para quem quer praticar esporte com estilo!",
-      "preco": 900,
+      "name": "Tênis Esportivo",
+      "category": "Calçados",
+      "description": "Tênis construído em uma base de couro completo comlínguas de marra e forro. Para quem quer praticar esporte com estilo!",
+      "price": 900,
       "src": "https://images.unsplash.com/photo-1556906781-9a412961c28c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-      "cores": [
+      "colors": [
         "Preto e Branco",
         "Preto e Vermelho",
         "Branco e Azul"
       ],
-      "tamanhos": [
+      "sizes": [
         36,
         37,
         38,
@@ -182,85 +182,91 @@
         41,
         42
       ],
-      "categoria_id": 3
+      "category_id": 3
     },
     {
       "id": 10,
-      "nome": "Jaqueta Bolsos Cargo",
-      "categoria": "casacos",
-      "descricao": "Jaqueta em sarja com bolsos cargo, trazendo a tendência utilitária à uma peça chave de inverno!",
-      "preco": 220,
+      "name": "Jaqueta Bolsos Cargo",
+      "category": "Casacos",
+      "description": "Jaqueta em sarja com bolsos cargo, trazendo a tendência utilitária à uma peça chave de inverno!",
+      "price": 220,
       "src": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8amFxdWV0YXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "cores": [
+      "colors": [
         "Verde",
         "Marrom"
       ],
-      "tamanhos": [
+      "sizes": [
         "P",
         "M",
         "G",
         "GG"
       ],
-      "categoria_id": 5
+      "category_id": 5
     },
     {
       "id": 11,
-      "nome": "Óculos Oval",
-      "categoria": "oculos",
-      "descricao": "Lentes ovais em uma armação metalizada texturizada. Puro estilo! ",
-      "preco": 140,
+      "name": "Óculos Oval",
+      "category": "Óculos",
+      "description": "Lentes ovais em uma armação metalizada texturizada. Puro estilo! ",
+      "price": 140,
       "src": "https://images.unsplash.com/photo-1656075426836-b387b49c0509?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fG9jdWxvcyUyMHBvc2FuZG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
-      "cores": [
+      "colors": [
         "Marrom e bege"
       ],
-      "tamanhos": [
+      "sizes": [
         "Único"
       ],
-      "categoria_id": 6
+      "category_id": 6
     },
     {
       "id": 12,
-      "nome": "Bolsa Satchel",
-      "categoria": "bolsas",
-      "descricao": "Bolsa Satchel de material sintético e formato despojado. Para aqueles que querem praticidade!",
-      "preco": 270,
+      "name": "Bolsa Satchel",
+      "category": "Bolsas",
+      "description": "Bolsa Satchel de material sintético e formato despojado. Para aqueles que querem praticidade!",
+      "price": 270,
       "src": "https://images.unsplash.com/photo-1534026609802-f7239f184d91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGJvbHNhJTIwcG9zYW5kb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      "cores": [
+      "colors": [
         "Bege",
         "Azul",
         "Preto"
       ],
-      "tamanhos": [
+      "sizes": [
         "Único"
       ],
-      "categoria_id": 2
+      "category_id": 2
     }
   ],
 
   "categories": [
     {
       "id": 1,
-      "nome": "camisetas"
+      "name": "Camisetas",
+      "src": "./src/images/categories/camisetas.png"
     },
     {
       "id": 2,
-      "nome": "bolsas"
+      "name": "Bolsas",
+      "src": "./src/images/categories/bolsas.png"
     },
     {
       "id": 3,
-      "nome": "calcados"
+      "name": "Calçados",
+      "src": "./src/images/categories/calcados.png"
     },
     {
       "id": 4,
-      "nome": "calcas"
+      "name": "Calças",
+      "src": "./src/images/categories/calcas.png"
     },
     {
       "id": 5,
-      "nome": "casacos"
+      "name": "Casacos",
+      "src": "./src/images/categories/casacos.png"
     },
     {
       "id": 6,
-      "nome": "oculos"
+      "name": "Óculos",
+      "src": "./src/images/categories/oculos.png"
     }
   ]
 }

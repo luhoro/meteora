@@ -149,49 +149,7 @@
           Busque por categoria:
         </h3>
 
-        <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center justify-between gap-y-4 gap-x-8 ">
-          <div class="col-span-1">
-            <img src="src/images/categories/camisetas.png" alt="Camisetas" class="w-full"/>
-            <button class="buttonCategories">
-              Camisetas
-            </button>
-          </div>
-
-          <div class="col-span-1">
-            <img src="src/images/categories/bolsas.png" alt="Camisetas" class="w-full "/>
-            <button class="buttonCategories">
-              Bolsas
-            </button>
-          </div>
-
-          <div class="col-span-1">
-            <img src="src/images/categories/calcados.png" alt="Calçados" class="w-full "/>
-            <button class="buttonCategories">
-              Calçados
-            </button>
-          </div>
-
-          <div class="col-span-1">
-            <img src="src/images/categories/calcas.png" alt="Calças" class="w-full "/>
-            <button class="buttonCategories">
-              Calças
-            </button>
-          </div>
-
-          <div class="col-span-1">
-            <img src="src/images/categories/casacos.png" alt="Casacos" class="w-full "/>
-            <button class="buttonCategories">
-              Casacos
-            </button>
-          </div>
-
-          <div class="col-span-1">
-            <img src="src/images/categories/oculos.png" alt="Óculos" class="w-full "/>
-            <button class=" buttonCategories">
-              Óculos
-            </button>
-          </div>
-        </div>
+        <div data-categories class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center justify-between gap-y-4 gap-x-8 "></div>
       </section>
 
       <section id="products" class="px-7 py-6">
@@ -199,12 +157,12 @@
           Produtos que estão bombando!
         </h3>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1110px] mx-auto gap-x-7 gap-y-8">
+        <div data-products class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1110px] mx-auto gap-x-7 gap-y-8">
           <div class="product">
             <img src="src/images/products/card1.png" alt="" class="w-full "/>
             <div class="p-4 pt-3">
               <h4 class="font-bold">Camiseta Conforto</h4>
-              <span class="text-sm mt-3 mb-4">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.
+              <span class="text-sm mt-3 mb-4">Multicolors e sizes. Tecido de algodão 100%, fresquinho para o verão.
                 Modelagem unissex.</span>
               <p class="font-bold">R$ 70,00</p>
               <button class="buttonProducts">Ver mais</button>
@@ -355,7 +313,7 @@
               </div>
 
               <div id="color" class="border-t border-gray-prim">
-                <h5 class="py-4 font-bold">Cores:</h5>
+                <h5 class="py-4 font-bold">colors:</h5>
 
                 <div class="flex gap-5">
                   <div class="flex flex-col gap-2 items-center">
@@ -425,9 +383,10 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
     
-    <script type="module" src="./src/scripts/responsive.js"></script>
-    <script type="module" src="./src/scripts/cardProduct.js"></script>
+    <script type="module" src="./src/scripts/menu.js"></script>
     <script type="module" src="./src/scripts/emailForm.js"></script>
+    <script type="module" src="./src/scripts/cardCategories.js"></script>
+    <script type="module" src="./src/scripts/cardProduct.js"></script>
   </body>
 
 </html>
