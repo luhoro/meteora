@@ -4,12 +4,12 @@ const sectionCards = document.querySelector('[data-categories]')
 
 function showCard(card) {
   const elementCard = `
-    <div class="col-span-1" >
-      <img src="${card.src}" alt="${card.name}" data-id="${card.id}" class="w-full" />
-        <button class="bg-black transition-all hover:text-green-prim text-white w-full h-9 text-base py-2">
-          ${card.name}
-        </button>
-      </div>
+    <div class="col-span-1 hover:outline-black" data-id="${card.id}">
+      <img src="${card.src}" alt="${card.name}" class="w-full" />
+      <button class="bg-black transition-all text-white hover:text-green-700 w-full h-9 text-base py-2">
+        ${card.name}
+      </button>
+    </div>
   `
   sectionCards.innerHTML += elementCard
 }
@@ -21,6 +21,8 @@ window.addEventListener('load', async () => {
     categories.map( category => showCard(category) )
 
   } catch (error) {
-    console.log(error)
+    sectionCards.innerHTML = `<p>Ops, houve um erro ao carregar as categorias dos produtos!</p>
+      
+    `
   }
 })
