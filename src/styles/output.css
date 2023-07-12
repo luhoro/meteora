@@ -569,6 +569,24 @@ video {
   color: rgb(175 128 255 / var(--tw-text-opacity));
 }
 
+.buttonCategories {
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.buttonCategories:hover {
+  --tw-text-opacity: 1;
+  color: rgb(209 240 121 / var(--tw-text-opacity));
+}
+
+.buttonCategories:active {
+  --tw-text-opacity: 1;
+  border: 1px solid black;
+}
+
 .static {
   position: static;
 }
