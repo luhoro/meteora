@@ -6,19 +6,6 @@
   .navbar {
     @apply text-white transition-all hover:text-green-prim py-2
   }
-
-  .buttonCategories {
-    @apply bg-black transition-all hover:text-green-prim text-white w-full h-9 text-base py-2
-  }
-
-  .product {
-    @apply col-span-1 border border-[#00000020] rounded-lg flex flex-col justify-between 
-  }
-
-  .buttonProducts {
-    @apply bg-purple-prim py-2 px-4 text-white border mt-[10px] transition-all hover:text-purple-prim hover:bg-transparent hover:border-purple-prim rounded-md
-  }
-  
 }
 
 @layer utilities {

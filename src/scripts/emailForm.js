@@ -4,7 +4,7 @@
 const formEmail = document.querySelector('[data-form-email]')
 const inputEmail = document.querySelector('#inputEmail')
 const errorEmail = document.querySelector('#errorEmail')
-const modalEmail = document.querySelector('[data-email]')
+const modalEmail = document.querySelector('[data-modal-email]')
 const closeModal = document.querySelector('#closeEmailModal')
 
 
