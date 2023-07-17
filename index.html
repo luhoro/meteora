@@ -13,7 +13,7 @@
   <body class="font-inter scrollbar">
 
     <header class="flex flex-col items-center md:flex-row">
-      <section id="top-header" class="bg-black flex flex-row items-center h-[58px] relative md:block w-full">
+      <section id="header-nav" class="bg-black flex flex-row items-center h-[58px] relative md:block w-full">
         <div class="flex flex-row justify-between px-6 md:pr-0 w-full h-full items-center md:justify-start gap-4">
           <a href="/" class="transition-all ease-in hover:scale-110 duration-200">
             <img src="src/images/icons/logo.svg" alt="Logo Meteora" />
@@ -31,7 +31,7 @@
               </li>
               <li>
                 <a href="#publi" class="navbar">Serviços</a>
-              </li>       
+              </li>
               <li>
                 <a href="#email" class="navbar">Promoções</a>
               </li>
@@ -39,7 +39,8 @@
           </nav>
         </div>
 
-        <nav data-mobile class="z-10 absolute top-0 right-0 bg-slate-800 px-6 pt-8 hidden md:hidden transition ease-linear">
+        <nav data-mobile
+          class="z-10 absolute top-0 right-0 bg-slate-800 px-6 pt-8 hidden md:hidden transition ease-linear">
           <ul class="flex flex-col">
             <li class="py-2 border-b border-gray-300">
               <a href="#categories" class="navbar">Categorias</a>
@@ -57,15 +58,15 @@
         </nav>
       </section>
 
-      <section id="bottom-header"
+      <form id="header-search"
         class="w-full md:w-auto row-2 gap-2 p-6 flex flex-row md:bg-black md:py-2 md:pl-2 md:justify-end md:gap-4 md:h-[58px]">
-        <input type="text" placeholder="Digite o produto"
+        <input id="input-search" type="text" placeholder="Digite o produto"
           class="text-[0.8rem] py-2 px-4 border border-black w-full md:w-36" />
-        <button
+        <button type="submit" id="button-search"
           class="text-[0.8rem] py-2 px-4 border border-black font-bold md:text-white md:border-white duration-20 md:hover:text-green-prim md:hover:border-green-prim hover:bg-green-prim md:hover:bg-black">
           Buscar
         </button>
-      </section>
+      </form>
     </header>
 
     <main>
@@ -84,13 +85,12 @@
 
           <div data-carousel-item id="banner" class=" hidden duration-700 ease-in-out">
             <div class="relative">
-              <img src="src/images/banner/banner2sm.png"
-                alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full block md:hidden"/>
-              <img src="src/images/banner/banner2md.png"
-                alt="Banner Coleção Atemporal, estilo e qualidade para durar."
-                class="w-full h-full hidden md:block lg:hidden"/>
-              <img src="src/images/banner/banner2lg.png"
-                alt="Banner Coleção Atemporal, estilo e qualidade para durar." class="w-full h-full hidden lg:block"/>
+              <img src="src/images/banner/banner2sm.png" alt="Banner Coleção Atemporal, estilo e qualidade para durar."
+                class="w-full h-full block md:hidden" />
+              <img src="src/images/banner/banner2md.png" alt="Banner Coleção Atemporal, estilo e qualidade para durar."
+                class="w-full h-full hidden md:block lg:hidden" />
+              <img src="src/images/banner/banner2lg.png" alt="Banner Coleção Atemporal, estilo e qualidade para durar."
+                class="w-full h-full hidden lg:block" />
 
               <div
                 class="absolute top-1/2 md:top-1/3 flex flex-col w-full text-center md:text-end gap-2 md:gap-4 lg:gap-5 text-white mt-6 px-12 md:pr-24 lg:pr-48">
@@ -105,13 +105,13 @@
             <div class="relative">
               <img src="src/images/banner/banner3sm.png"
                 alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental"
-                class="w-full h-full block md:hidden"/>
+                class="w-full h-full block md:hidden" />
               <img src="src/images/banner/banner3md.png"
                 alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental"
-                class="w-full h-full hidden md:block lg:hidden"/>
+                class="w-full h-full hidden md:block lg:hidden" />
               <img src="src/images/banner/banner3lg.png"
                 alt="Banner Coleção Atemporal, alto impacto visual, baixo impacto ambiental"
-                class="w-full h-full hidden lg:block"/>
+                class="w-full h-full hidden lg:block" />
               <div
                 class="absolute top-1/2 md:top-1/3 flex flex-col w-full text-center md:text-start gap-2 md:gap-4 lg:gap-5 text-white mt-6 px-8 md:pl-24 lg:pl-48">
                 <h2 class="uppercase text-3xl ">Coleção Atemporal</h2>
@@ -146,7 +146,50 @@
           Busque por categoria:
         </h3>
 
-        <div data-categories class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center justify-between gap-y-4 gap-x-8 "></div>
+        <div data-categories
+          class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:flex lg:justify-center justify-between gap-y-4 gap-x-8 ">
+          <button class="col-span-1" data-categorie-id="1">
+            <img src="src/images/categories/camisetas.png" alt="Categoria Camisetas" class="w-full" />
+            <p class="bg-black text-center transition-all hover:text-green-prim text-white w-full h-9 text-base py-2">
+              Camisetas
+            </p>
+          </button>
+
+          <button class="col-span-1" data-categorie-id="2">
+            <img src="src/images/categories/bolsas.png" alt="Categoria Bolsas" class="w-full" />
+            <p class="bg-black text-center transition-all hover:text-green-prim text-white w-full h-9 text-base py-2">
+              Bolsas
+            </p>
+          </button>
+
+          <button class="col-span-1" data-categorie-id="3">
+            <img src="src/images/categories/calcados.png" alt="Categoria Calçados" class="w-full" />
+            <p class="bg-black text-center transition-all hover:text-green-prim text-white w-full h-9 text-base py-2">
+              Calçados
+            </p>
+          </button>
+
+          <button class="col-span-1" data-categorie-id="4">
+            <img src="src/images/categories/calcas.png" alt="Categoria Calças" class="w-full" />
+            <p class="bg-black text-center transition-all hover:text-green-prim text-white w-full h-9 text-base py-2">
+              Calças
+            </p>
+          </button>
+
+          <button class="col-span-1" data-categorie-id="5">
+            <img src="src/images/categories/casacos.png" alt="Categoria Casacos" class="w-full" />
+            <p class="bg-black text-center transition-all hover:text-green-prim text-white w-full h-9 text-base py-2">
+              Casacos
+            </p>
+          </button>
+
+          <button class="col-span-1" data-categorie-id="6">
+            <img src="src/images/categories/oculos.png" alt="Categoria Óculos" class="w-full" />
+            <p class="bg-black text-center transition-all hover:text-green-prim text-white w-full h-9 text-base py-2">
+              Óculos
+            </p>
+          </button>
+        </div>
       </section>
 
       <section id="products" class="px-7 py-6">
@@ -154,8 +197,9 @@
           Produtos que estão bombando!
         </h3>
 
-        <div data-products class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1110px] mx-auto gap-x-7 gap-y-8">
-          
+        <div data-products
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1110px] mx-auto gap-x-7 gap-y-8">
+
         </div>
       </section>
 
@@ -205,9 +249,11 @@
           <form data-form-email class="flex relative border border-black border-spacing-4">
             <span id="errorEmail" class="absolute -top-[20px] text-red-500"></span>
 
-            <input id="inputEmail" type="email" placeholder="Digite o seu email" class="w-full placeholder:text-gray-500 text-gray-700 border-0" />
+            <input id="inputEmail" type="email" placeholder="Digite o seu email"
+              class="w-full placeholder:text-gray-500 text-gray-700 border-0" />
 
-            <button type="submit" class="bg-purple-prim py-2 ring-1 ring-inset px-4 transition-all ring-purple-prim text-white hover:text-purple-prim hover:bg-transparent ">
+            <button type="submit"
+              class="bg-purple-prim py-2 ring-1 ring-inset px-4 transition-all ring-purple-prim text-white hover:text-purple-prim hover:bg-transparent ">
               Enviar
             </button>
           </form>
@@ -223,78 +269,79 @@
     </footer>
 
     <!-- MODAL STRUCTURES -->
-    <dialog data-modal-product class="fixed p-0 z-30 backdrop:bg-[#00000080] scrollbar max-w-5xl">
-      <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center ">
-        <img src="./src/images/icons/check.svg" alt=""/>
+    <dialog data-modal-product class="p-0 z-30 backdrop:bg-[#00000080] scrollbar max-w-5xl ">
+      <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center">
+        <img src="./src/images/icons/check.svg" alt="" />
         <p class="text-white text-xl w-full"> Confira detalhes sobre o produto </p>
 
         <button id="closeProductModal" class="">
-          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro"/>
+          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro" />
         </button>
       </div>
 
-      <div class="bg-white p-4 ">
+      <div class="bg-white p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full border border-gray-300">
+          <div class="h-fit w-full md:max-h-[80vh]">
+            <img src="" alt="" class="object-cover h-full w-full" />
+          </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 w-full md:border md:border-gray-300">
-          <img src="./src/images/products/card4.png" alt="" class="w-full place-self-center bg-contain bg-center"/>
-
-          
-            <div class="grid grid-cols-1 px-4 pt-6  gap-4 h-full">
-              <div class="flex flex-col justify-between gap-6">
-                <h4 class="font-bold">Produto</h4>
-                <span>Descrição</span>
-                <div class="w-full h-[1px] bg-black"></div>
-                <p class="text-xl font-bold">Preço</p>
-                <span class="text-gray-400">Vendido e entregue por Riachuelo</span>
-              </div>
-
-              <div id="color" class="border-t border-gray-prim">
-                <h5 class="py-4 font-bold">Cores</h5>
-
-                <div class="flex gap-5">
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="color" id="blue"><label for="blue">Azul Claro</label>
-                  </div>
-
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="color" id="white"><label for="white">Offwhite</label>
-                  </div>
-
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="color" id="black"><label for="black">Preto</label>
-                  </div>
-                </div>
-              </div>
-
-              <div id="size" class="border-t border-gray-prim">
-                <h5 class="py-4 font-bold">Tamanho:</h5>
-
-                <div class="flex gap-5">
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="num" id="p"><label for="p">P</label>
-                  </div>
-
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="num" id="pp"><label for="pp">PP</label>
-                  </div>
-
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="num" id="m"><label for="m">M</label>
-                  </div>
-
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="num" id="g"><label for="g">G</label>
-                  </div>
-
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="num" id="gg"><label for="gg">G</label>
-                  </div>
-                </div>
-              </div>
-
-              <button class="w-fit px-4 py-2 mb-4 border border-purple-prim bg-purple-prim text-white font-bold">Adicionar à sacola</button>
+          <div class="grid grid-cols-1 px-4 pt-6 gap-4 h-full md:max-h-[80vh]">
+            <div class="flex flex-col justify-between gap-6">
+              <h4 class="font-bold">Produto</h4>
+              <span>Descrição</span>
+              <div class="w-full h-[1px] bg-black"></div>
+              <p class="text-xl font-bold">Preço</p>
+              <span class="text-gray-400">Vendido e entregue por Riachuelo</span>
             </div>
-          
+
+            <div id="color" class="border-t border-gray-prim">
+              <h5 class="py-4 font-bold">Cores</h5>
+
+              <div class="flex gap-5">
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="color" id="blue"><label for="blue">Azul Claro</label>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="color" id="white"><label for="white">Offwhite</label>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="color" id="black"><label for="black">Preto</label>
+                </div>
+              </div>
+            </div>
+
+            <div id="size" class="border-t border-gray-prim">
+              <h5 class="py-4 font-bold">Tamanho:</h5>
+
+              <div class="flex gap-5">
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="num" id="p"><label for="p">P</label>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="num" id="pp"><label for="pp">PP</label>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="num" id="m"><label for="m">M</label>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="num" id="g"><label for="g">G</label>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="num" id="gg"><label for="gg">G</label>
+                </div>
+              </div>
+            </div>
+
+            <button class="w-fit px-4 py-2 mb-4 border border-purple-prim bg-purple-prim text-white font-bold">Adicionar
+              à sacola</button>
+          </div>
+
         </div>
 
       </div>
@@ -302,11 +349,11 @@
 
     <dialog data-modal-email class="fixed w-full p-0 z-30 shadow-modal backdrop:bg-[#00000080] scrollbar">
       <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center lg:px-28">
-        <img src="./src/images/icons/check.svg" alt=""/>
+        <img src="./src/images/icons/check.svg" alt="" />
         <span class="text-white text-xl w-full"> E-mail cadastrado com sucesso! </span>
 
         <button id="closeEmailModal">
-          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro"/>
+          <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro" />
         </button>
       </div>
 
@@ -318,35 +365,35 @@
 
 
     <!-- Para rodar o build do tailwind -->
-    <button class="hidden col-span-1 " >
-      <img src="${card.src}" alt="${card.name}" class="w-full" />
+    <button class="hidden col-span-1 ">
+      <img src="" alt="Categoria" class="w-full" />
       <p class="bg-black transition-all hover:text-green-prim text-white w-full h-9 text-base py-2">
-        ${card.name}
+        Categoria
       </p>
     </button>
 
     <div class="hidden col-span-1 border border-[#00000020] rounded-lg flex-col justify-between ">
       <div class="h-96">
-        <img src="${card.src}" alt="${card.name}" class="w-full h-full object-cover rounded-t-lg"/>
+        <img src="" alt="" class="w-full h-full object-cover rounded-t-lg" />
       </div>
       <div class="p-4 pt-3 h-full flex flex-col justify-between">
-        <h4 class="font-bold">${card.name}</h4>
+        <h4 class="font-bold">Produto</h4>
         <span class="text-sm mt-3 mb-4">${card.description}</span>
         <p class="font-bold">R$ ${card.price},00</p>
-        <button id="${card.id}" class="bg-purple-prim py-2 px-4 border border-purple-prim text-white mt-[10px] transition-all hover:text-purple-prim hover:bg-transparent hover:border-purple-prim rounded-md w-fit">
-         Ver mais
+        <button id="${card.id}"
+          class="bg-purple-prim py-2 px-4 border border-purple-prim text-white mt-[10px] transition-all hover:text-purple-prim hover:bg-transparent hover:border-purple-prim rounded-md w-fit">
+          Ver mais
         </button>
       </div>
     </div>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
-    
+
     <script type="module" src="./src/scripts/menu.js"></script>
     <script type="module" src="./src/scripts/emailForm.js"></script>
-    <script type="module" src="./src/scripts/cardProduct.js"></script>
+    <script type="module" src="./src/scripts/cardProducts.js"></script>
     <script type="module" src="./src/scripts/cardCategories.js"></script>
-    <script type="module" src="./src/scripts/filterProducts.js"></script>
   </body>
 
 </html>

@@ -21,7 +21,6 @@ function getCard(card) {
   `
 }
 
-
 async function toggleModal(products) {
 
   const buttonProducts = document.querySelectorAll('.buttonProducts')
@@ -41,7 +40,6 @@ async function toggleModal(products) {
   }))
 }
 
-
 function getModal(product) {
   modalProduct.innerHTML = `
     <div class="bg-black py-4 px-7 flex gap-5 justify-between items-center ">
@@ -53,13 +51,14 @@ function getModal(product) {
       </button>
     </div>
 
-    <div class="bg-white p-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 w-full md:border md:border-gray-300">
-        <div class="h-full w-full">
+    <div class="bg-white p-4 ">
+      <div class="grid grid-cols-1 md:grid-cols-2 w-full border border-gray-300 h-fit">
+
+        <div class="w-full h-full md:max-h-[80vh]">
           <img src="${product.src}" alt="${product.name}" class="object-cover h-full w-full"/>
         </div>
 
-        <div class="flex flex-col px-4 pt-6 gap-4 justify-between">
+        <div class="flex flex-col px-4 pt-6 gap-4 justify-between h-full md:max-h-[80vh]">
           <div class="flex flex-col gap-6">
             <h4 class="font-bold">${product.name}</h4>
             <span>${product.description}</span>
@@ -116,3 +115,10 @@ async function showCardProducts() {
   }
 }
 showCardProducts()
+
+
+export const cardProducts = {
+  getCard,
+  showCardProducts,
+  toggleModal
+}

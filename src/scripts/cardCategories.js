@@ -1,25 +1,50 @@
 import { connectApi } from "./connectApi.js"
+import { cardProducts } from "./cardProducts.js"
 
-const sectionCards = document.querySelector('[data-categories]')
+const formSearch = document.querySelector('#header-search')
+const categories = document.querySelectorAll('[data-categorie-id]')
+const listProducts = document.querySelector('[data-products]')
+let filterCategorie = ''
 
-function getCard(card) {
-  sectionCards.innerHTML += `
-    <button class="col-span-1" data-categorie-id="${card.id}">
-      <img src="${card.src}" alt="${card.name}" class="w-full" />
-      <p class="bg-black text-center transition-all hover:text-green-prim text-white w-full h-9 text-base py-2">
-        ${card.name}
-      </p>
-    </button>
-  `
-}
+formSearch.addEventListener('submit', (event) => {
+  event.preventDefault()
+  const inputSearch = document.querySelector('#input-search').value.toLowerCase()
 
-async function showCardCategories() {
+  console.log(inputSearch)
+  searchProducts(inputSearch)
+})
+
+categories.forEach(card => card.addEventListener('click', (event) => {
+  const idCategorie = card.getAttribute('data-categorie-id')
+  filterProducts(idCategorie)
+}))
+
+
+
+async function filterProducts(idCategorie) {
   try {
-    const categories = await connectApi.getCategories()
-    categories.map(category => getCard(category))
+    listProducts.innerHTML = ''
+    const products = await connectApi.getProducts()
+    const filterProducts = products.filter( product => product.category_id === parseInt(idCategorie) ? product : null )
+    
+    let arrayProducts
+    filterProducts.forEach( product => arrayProducts =+ cardProducts.getCard(product) )
+    cardProducts.toggleModal(products)
 
   } catch (error) {
-    sectionCards.innerHTML = `<p>Ops, houve um erro ao carregar as categorias!</p>`
+    console.log(error)
   }
 }
-showCardCategories()
+
+async function searchProducts(inputSearch) {
+  try {
+    const products = await connectApi.getProducts()
+
+    if (inputSearch == filterCategorie) {
+      inputSearch = ''
+    } 
+
+  } catch (error) {
+    
+  }
+}
