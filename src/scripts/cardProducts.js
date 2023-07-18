@@ -51,58 +51,56 @@ function getModal(product) {
         <img src="./src/images/icons/close.svg" alt="Fechar confirmação cadastro"/>
       </button>
     </div>
+    
+    <div class="bg-white m-4 grid grid-cols-1 md:grid-cols-2 border border-gray-300 rounded-lg">
+      <div class="w-full md:h-[560px] rounded-t-lg">
+        <img src="${product.src}" alt="${product.name}" class="object-cover h-full w-full rounded-t-lg md:rounded-t-none md:rounded-l-lg"/>
+      </div>
 
-    <div class="bg-white p-4 ">
-      <div class="grid grid-cols-1 md:grid-cols-2 w-full border border-gray-300 h-fit rounded-lg">
-
-        <div class="w-full h-full md:max-h-[80vh] rounded-t-lg">
-          <img src="${product.src}" alt="${product.name}" class="object-cover h-full w-full rounded-t-lg md:rounded-t-none md:rounded-l-lg"/>
+      <div class="flex flex-col px-4 pt-6 gap-4 justify-between md:h-[560px]">
+        <div class="flex flex-col gap-6">
+          <h4 class="font-bold">${product.name}</h4>
+          <span>${product.description}</span>
+          <div class="w-full h-[1px] bg-black"></div>
+          <p class="text-xl font-bold">R$ ${product.price},00</p>
+          <span class="text-gray-400">Vendido e entregue por Riachuelo</span>
         </div>
 
-        <div class="flex flex-col px-4 pt-6 gap-4 justify-between h-full md:max-h-[80vh]">
-          <div class="flex flex-col gap-6">
-            <h4 class="font-bold">${product.name}</h4>
-            <span>${product.description}</span>
-            <div class="w-full h-[1px] bg-black"></div>
-            <p class="text-xl font-bold">R$ ${product.price},00</p>
-            <span class="text-gray-400">Vendido e entregue por Riachuelo</span>
-          </div>
+        <div id="color" class="border-t border-gray-prim">
+          <h5 class="py-4 font-bold">Cores:</h5>
 
-          <div id="color" class="border-t border-gray-prim">
-            <h5 class="py-4 font-bold">Cores:</h5>
-
-            <div class="flex gap-5">
-              ${product.colors.map(color => {
-                return `
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="color" id="${color}">
-                    <label for="${color}">${color}</label>
-                  </div>            
-                `
-              }).join('')}
-            </div>
+          <div class="flex gap-5">
+            ${product.colors.map(color => {
+              return `
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="color" id="${color}">
+                  <label for="${color}">${color}</label>
+                </div>            
+              `
+            }).join('')}
           </div>
-
-          <div id="size" class="border-t border-gray-prim">
-            <h5 class="py-4 font-bold">Tamanhos:</h5>
-            <div class="flex gap-5">
-              ${product.sizes.map(size => {
-                return `
-                  <div class="flex flex-col gap-2 items-center">
-                    <input type="radio" name="num" id="${size}">
-                    <label for="${size}">${size}</label>
-                  </div>
-                `
-              }).join('')}
-            </div>
-          </div>
-          <button class="w-fit h-fit px-4 py-2 mb-4 border transition-all border-purple-prim bg-purple-prim text-white font-bold hover:bg-white hover:text-purple-prim rounded-md">
-            Adicionar à sacola
-          </button>
         </div>
 
+        <div id="size" class="border-t border-gray-prim">
+          <h5 class="py-4 font-bold">Tamanhos:</h5>
+          <div class="flex gap-5">
+            ${product.sizes.map(size => {
+              return `
+                <div class="flex flex-col gap-2 items-center">
+                  <input type="radio" name="num" id="${size}">
+                  <label for="${size}">${size}</label>
+                </div>
+              `
+            }).join('')}
+          </div>
+        </div>
+
+        <button class="w-fit h-fit px-4 py-2 mb-4 border transition-all border-purple-prim bg-purple-prim text-white font-bold hover:bg-white hover:text-purple-prim rounded-md">
+          Adicionar à sacola
+        </button>
       </div>
     </div>
+    
   `
 }
 

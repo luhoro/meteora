@@ -279,72 +279,71 @@
         </button>
       </div>
 
-      <div class="bg-white p-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 w-full border border-gray-300 rounded-lg">
-          <div class="h-fit w-full md:max-h-[80vh] rounded-t-lg">
-            <img src="" alt="" class="object-cover h-full w-full rounded-t-lg md:rounded-t-none md:rounded-l-lg" />
+      <div class="bg-white m-4 grid grid-cols-1 md:grid-cols-2 w-full border border-gray-300 rounded-lg ">
+        <div class="md:h-[560px] w-full rounded-t-lg">
+          <img src="" alt="" class="object-cover h-full w-full rounded-t-lg md:rounded-t-none md:rounded-l-lg" />
+        </div>
+
+        <div class="grid grid-cols-1 px-4 pt-6 gap-4 md:h-[560px]">
+          <div class="flex flex-col justify-between gap-6">
+            <h4 class="font-bold">Produto</h4>
+            <span>Descrição</span>
+            <div class="w-full h-[1px] bg-black"></div>
+            <p class="text-xl font-bold">Preço</p>
+            <span class="text-gray-400">Vendido e entregue por Riachuelo</span>
           </div>
 
-          <div class="grid grid-cols-1 px-4 pt-6 gap-4 h-full md:max-h-[80vh]">
-            <div class="flex flex-col justify-between gap-6">
-              <h4 class="font-bold">Produto</h4>
-              <span>Descrição</span>
-              <div class="w-full h-[1px] bg-black"></div>
-              <p class="text-xl font-bold">Preço</p>
-              <span class="text-gray-400">Vendido e entregue por Riachuelo</span>
-            </div>
+          <div id="color" class="border-t border-gray-prim">
+            <h5 class="py-4 font-bold">Cores</h5>
 
-            <div id="color" class="border-t border-gray-prim">
-              <h5 class="py-4 font-bold">Cores</h5>
+            <div class="flex gap-5">
+              <div class="flex flex-col gap-2 items-center">
+                <input type="radio" name="color" id="blue"><label for="blue">Azul Claro</label>
+              </div>
 
-              <div class="flex gap-5">
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="color" id="blue"><label for="blue">Azul Claro</label>
-                </div>
+              <div class="flex flex-col gap-2 items-center">
+                <input type="radio" name="color" id="white"><label for="white">Offwhite</label>
+              </div>
 
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="color" id="white"><label for="white">Offwhite</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="color" id="black"><label for="black">Preto</label>
-                </div>
+              <div class="flex flex-col gap-2 items-center">
+                <input type="radio" name="color" id="black"><label for="black">Preto</label>
               </div>
             </div>
-
-            <div id="size" class="border-t border-gray-prim">
-              <h5 class="py-4 font-bold">Tamanho:</h5>
-
-              <div class="flex gap-5">
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="p"><label for="p">P</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="pp"><label for="pp">PP</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="m"><label for="m">M</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="g"><label for="g">G</label>
-                </div>
-
-                <div class="flex flex-col gap-2 items-center">
-                  <input type="radio" name="num" id="gg"><label for="gg">G</label>
-                </div>
-              </div>
-            </div>
-
-            <button class="w-fit px-4 py-2 mb-4 border border-purple-prim bg-purple-prim text-white font-bold">Adicionar
-              à sacola</button>
           </div>
 
+          <div id="size" class="border-t border-gray-prim">
+            <h5 class="py-4 font-bold">Tamanho:</h5>
+
+            <div class="flex gap-5">
+              <div class="flex flex-col gap-2 items-center">
+                <input type="radio" name="num" id="p"><label for="p">P</label>
+              </div>
+
+              <div class="flex flex-col gap-2 items-center">
+                <input type="radio" name="num" id="pp"><label for="pp">PP</label>
+              </div>
+
+              <div class="flex flex-col gap-2 items-center">
+                <input type="radio" name="num" id="m"><label for="m">M</label>
+              </div>
+
+              <div class="flex flex-col gap-2 items-center">
+                <input type="radio" name="num" id="g"><label for="g">G</label>
+              </div>
+
+              <div class="flex flex-col gap-2 items-center">
+                <input type="radio" name="num" id="gg"><label for="gg">G</label>
+              </div>
+            </div>
+          </div>
+
+          <button class="w-fit px-4 py-2 mb-4 border border-purple-prim bg-purple-prim text-white font-bold">Adicionar
+            à sacola</button>
         </div>
 
       </div>
+
+
     </dialog>
 
     <dialog data-modal-email class="fixed w-full p-0 z-30 shadow-modal backdrop:bg-[#00000080] scrollbar">
@@ -362,7 +361,7 @@
       </div>
     </dialog>
 
-    
+
 
     <!-- Para rodar o build do tailwind -->
     <div class="hidden">
@@ -372,12 +371,12 @@
           Categoria
         </p>
       </button>
-  
+
       <div class="hidden col-span-1 border border-[#00000020] rounded-lg flex-col justify-between ">
         <div class="h-[400px]">
           <img src="" alt="" class="w-full h-full object-cover rounded-t-lg" />
         </div>
-  
+
         <div class="p-4 pt-3 h-full flex flex-col justify-between">
           <h4 class="font-bold">Produto</h4>
           <span class="text-sm mt-3 mb-4">${card.description}</span>
@@ -388,9 +387,9 @@
           </button>
         </div>
       </div>
-  
+
       <h4 class="hidden bg-gray-100 col-span-3 text-center rounded-3xl font-bold p-6 text-gray-600 text-xl">
-        Ops, não temos este produto! 
+        Ops, não temos este produto!
       </h4>
     </div>
 

@@ -4,7 +4,7 @@ import { cardProducts } from "./cardProducts.js"
 const formSearch = document.querySelector('#header-search')
 const categories = document.querySelectorAll('[data-categorie-id]')
 const listProducts = document.querySelector('[data-products]')
-let filterCategorie = ''
+let filterCategorie 
 let arrayProducts
 
 formSearch.addEventListener('submit', (event) => {
@@ -27,17 +27,17 @@ async function filterProducts(idCategorie) {
     const filterProducts = products.filter(product => product.category_id === parseInt(idCategorie) ? product : null)
 
     if (filterCategorie == idCategorie) {
-      idCategorie = ''
       listProducts.innerHTML = ''
       products.forEach(product => cardProducts.getCard(product))
       cardProducts.toggleModal(products)
+      filterCategorie = ''
 
     } else {
       listProducts.innerHTML = ''
       filterProducts.forEach(product => arrayProducts = + cardProducts.getCard(product))
       cardProducts.toggleModal(products)
-
       filterCategorie = idCategorie
+
     }
 
   } catch (error) {
