@@ -6,9 +6,10 @@ const modalProduct = document.querySelector('[data-modal-product]')
 function getCard(card) {
   sectionCards.innerHTML += `
   <div class="col-span-1 border border-[#00000020] rounded-lg flex flex-col justify-between ">
-    <div class="h-96">
-      <img src="${card.src}" alt="${card.name}" class="w-full h-full object-cover rounded-t-lg"/>
+    <div class="h-[400px]">
+      <img src="${card.src}" alt="${card.name}" class="w-full h-full object-cover rounded-t-lg "/>
     </div>
+
     <div class="p-4 pt-3 h-full flex flex-col justify-between">
       <h4 class="font-bold">${card.name}</h4>
       <span class="text-sm mt-3 mb-4">${card.description}</span>
@@ -52,10 +53,10 @@ function getModal(product) {
     </div>
 
     <div class="bg-white p-4 ">
-      <div class="grid grid-cols-1 md:grid-cols-2 w-full border border-gray-300 h-fit">
+      <div class="grid grid-cols-1 md:grid-cols-2 w-full border border-gray-300 h-fit rounded-lg">
 
-        <div class="w-full h-full md:max-h-[80vh]">
-          <img src="${product.src}" alt="${product.name}" class="object-cover h-full w-full"/>
+        <div class="w-full h-full md:max-h-[80vh] rounded-t-lg">
+          <img src="${product.src}" alt="${product.name}" class="object-cover h-full w-full rounded-t-lg md:rounded-t-none md:rounded-l-lg"/>
         </div>
 
         <div class="flex flex-col px-4 pt-6 gap-4 justify-between h-full md:max-h-[80vh]">
@@ -95,10 +96,11 @@ function getModal(product) {
               }).join('')}
             </div>
           </div>
-          <button class="w-fit h-fit px-4 py-2 mb-4 border transition-all border-purple-prim bg-purple-prim text-white font-bold hover:bg-white hover:text-purple-prim">
+          <button class="w-fit h-fit px-4 py-2 mb-4 border transition-all border-purple-prim bg-purple-prim text-white font-bold hover:bg-white hover:text-purple-prim rounded-md">
             Adicionar à sacola
           </button>
         </div>
+
       </div>
     </div>
   `

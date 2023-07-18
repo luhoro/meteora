@@ -28,6 +28,7 @@ Para o desenvolvimento do projeto, foi fornecido 3 planos de estudos com os assu
 
 ### Design
 [Acesse o figma do Projeto aqui](https://www.figma.com/file/2TLgt8UjsWUViWlmpXu5Fz/Challenge-Front-end-%7C-Loja-Meteora?type=design&node-id=2386-3188&mode=design&t=bpa8eE2IWC8XAD9Q-0)
+
 ![Imagem figma](src/images/figma.png)
 
 
