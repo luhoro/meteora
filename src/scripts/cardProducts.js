@@ -58,21 +58,21 @@ function getModal(product) {
       </div>
 
       <div class="flex flex-col p-4 gap-4 justify-between md:h-[560px]">
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-4">
           <h4 class="font-bold">${product.name}</h4>
           <span>${product.description}</span>
           <div class="w-full h-[1px] bg-black"></div>
           <p class="text-xl font-bold">R$ ${product.price},00</p>
-          <span class="text-gray-400">Vendido e entregue por Riachuelo</span>
+          <span class="text-gray-400">Vendido e entregue por ${product.store}</span>
         </div>
 
         <div id="color" class="border-t border-gray-prim">
           <h5 class="py-4 font-bold">Cores:</h5>
 
-          <div class="flex gap-5">
+          <div class="flex gap-4">
             ${product.colors.map(color => {
               return `
-                <div class="flex flex-col gap-2 items-center">
+                <div class="flex flex-col gap-2 items-center text-center">
                   <input type="radio" name="color" id="${color}">
                   <label for="${color}">${color}</label>
                 </div>            
@@ -83,7 +83,7 @@ function getModal(product) {
 
         <div id="size" class="border-t border-gray-prim">
           <h5 class="py-4 font-bold">Tamanhos:</h5>
-          <div class="flex gap-5">
+          <div class="flex gap-4">
             ${product.sizes.map(size => {
               return `
                 <div class="flex flex-col gap-2 items-center">

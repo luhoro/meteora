@@ -2,18 +2,18 @@
   "products": [
     {
       "id": 1,
-      "name": "Camiseta Conforto",
+      "name": "Camisa Conforto",
       "category": "Camisetas",
-      "description": "Multicolors e sizess. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+      "description": "Multicores e tamanhos. Tecido de algodão 100%, perfeito para o inverno. Modelagem unissex.",
       "price": 70,
-      "src": "https://images.unsplash.com/photo-1520013633827-6724d7d57eb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "store": "Renner",
+      "src": "https://images.unsplash.com/photo-1520013775031-64ad028d1627?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
       "colors": [
-        "Mostarda",
-        "Vermelho",
+        "Branco",
+        "Cinza",
         "Preto"
       ],
       "sizes": [
-        "PP",
         "P",
         "M",
         "G",
@@ -23,40 +23,40 @@
     },
     {
       "id": 2,
-      "name": "Calça Alfaiataria",
+      "name": "Calça Tactel",
       "category": "Calças",
-      "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
-      "price": 180,
-      "src": "https://images.unsplash.com/photo-1614251055880-ee96e4803393?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "description": "Leveza e estilo para qualquer situação. Para todas as estações!",
+      "price": 90,
+      "store": "Riachuelo",
+      "src": "https://plus.unsplash.com/premium_photo-1668895511242-5d78e1101aa5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
       "colors": [
+        "Cinza",
         "Bege",
-        "Marrom",
-        "Preto"
+        "Rosa Nude"
       ],
       "sizes": [
-        "PP",
-        "P",
-        "M",
-        "G",
-        "GG"
+        "36",
+        "38",
+        "40",
+        "42",
+        "44"
       ],
       "category_id": 4
     },
     {
       "id": 3,
-      "name": "Tênis Chunky",
+      "name": "Tênis Casual",
       "category": "Calçados",
-      "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
-      "price": 250,
-      "src": "https://images.unsplash.com/photo-1542674684-d14b3e0d9763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "description": "Tênis casual com solado revestido e . Modelo unissex.",
+      "price": 160,
+      "store": "Meteora",
+      "src": "https://images.unsplash.com/photo-1532735180885-700d50fafbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
       "colors": [
-        "branco",
+        "Azul",
         "Cinza",
-        "Preto"
+        "Verde"
       ],
       "sizes": [
-        36,
-        37,
         38,
         39,
         40,
@@ -67,15 +67,17 @@
     },
     {
       "id": 4,
-      "name": "Jaqueta Jeans",
+      "name": "Suéter Monocolor",
       "category": "Casacos",
-      "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica! ",
-      "price": 150,
-      "src": "https://images.unsplash.com/photo-1614693348454-1e0710d21c60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+      "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntico! ",
+      "price": 140,
+      "store": "Meteora",
+      "src": "https://images.unsplash.com/photo-1506634572416-48cdfe530110?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=685&q=80",
       "colors": [
-        "Azul Claro",
-        "Offwhite",
-        "Preto"
+        "Vermelho",
+        "Vinho",
+        "Azul",
+        "Roxo"
       ],
       "sizes": [
         "PP",
@@ -92,7 +94,8 @@
       "category": "Óculos",
       "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
       "price": 120,
-      "src": "https://images.unsplash.com/photo-1611700885802-4ea038105709?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80",
+      "store": "Renner",
+      "src": "https://images.unsplash.com/photo-1654312079523-a7703ed4b4ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
       "colors": [
         "Branco",
         "Vermelho",
@@ -109,10 +112,12 @@
       "category": "Bolsas",
       "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
       "price": 120,
-      "src": "https://images.unsplash.com/photo-1610152563300-94d6cf5608b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+      "store": "Renner",
+      "src": "https://images.unsplash.com/photo-1524386189627-88c26ac1cc69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80",
       "colors": [
-        "Marrom claro",
-        "Marrom escuro"
+        "Verde",
+        "Bege",
+        "Azul"
       ],
       "sizes": [
         "Único"
@@ -125,6 +130,7 @@
       "category": "Camisetas",
       "description": "Camisa gola alta, elegante e versátil. Ideal para o dia a dia!",
       "price": 90,
+      "store": "Riachuelo",
       "src": "https://images.unsplash.com/photo-1549570652-97324981a6fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
       "colors": [
         "Bordô",
@@ -147,6 +153,7 @@
       "category": "Calças",
       "description": "Calça Jeans de acabamento largo com pequenos rasgos. Combina estilo e causalidade! ",
       "price": 140,
+      "store": "Meteora",
       "src": "https://images.unsplash.com/photo-1582552938357-32b906df40cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhbCVDMyVBN2ElMjBqZWFuc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "colors": [
         "Azul Claro",
@@ -167,6 +174,7 @@
       "category": "Calçados",
       "description": "Tênis construído em uma base de couro completo comlínguas de marra e forro. Para quem quer praticar esporte com estilo!",
       "price": 900,
+      "store": "Riachuelo",
       "src": "https://images.unsplash.com/photo-1556906781-9a412961c28c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
       "colors": [
         "Preto e Branco",
