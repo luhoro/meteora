@@ -53,11 +53,11 @@ function getModal(product) {
     </div>
     
     <div class="bg-white m-4 grid grid-cols-1 md:grid-cols-2 border border-gray-300 rounded-lg">
-      <div class="w-full md:h-[560px] rounded-t-lg">
+      <div class="w-full md:h-[560px] rounded-t-lg md:rounded-t-none md:rounded-l-lg">
         <img src="${product.src}" alt="${product.name}" class="object-cover h-full w-full rounded-t-lg md:rounded-t-none md:rounded-l-lg"/>
       </div>
 
-      <div class="flex flex-col px-4 pt-6 gap-4 justify-between md:h-[560px]">
+      <div class="flex flex-col p-4 gap-4 justify-between md:h-[560px]">
         <div class="flex flex-col gap-6">
           <h4 class="font-bold">${product.name}</h4>
           <span>${product.description}</span>
@@ -95,7 +95,7 @@ function getModal(product) {
           </div>
         </div>
 
-        <button class="w-fit h-fit px-4 py-2 mb-4 border transition-all border-purple-prim bg-purple-prim text-white font-bold hover:bg-white hover:text-purple-prim rounded-md">
+        <button class="w-fit h-fit px-4 py-2 border transition-all border-purple-prim bg-purple-prim text-white font-bold hover:bg-white hover:text-purple-prim rounded-md">
           Adicionar à sacola
         </button>
       </div>
