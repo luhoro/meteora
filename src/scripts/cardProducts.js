@@ -6,7 +6,7 @@ const modalProduct = document.querySelector('[data-modal-product]')
 function getCard(card) {
   sectionCards.innerHTML += `
   <div class="col-span-1 border border-[#00000020] rounded-lg flex flex-col justify-between ">
-    <div class="h-[400px]">
+    <div class="h-[400px] min-h-[400px]">
       <img src="${card.src}" alt="${card.name}" class="w-full h-full object-cover rounded-t-lg "/>
     </div>
 
